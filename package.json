@@ -2,9 +2,12 @@
   "name": "thuocsiseo",
   "private": true,
   "scripts": {
+    "d": "next dev",
     "dev": "next dev",
     "build": "next build",
+    "b": "next build",
     "start": "next start",
+    "s": "next start",
     "lint": "next lint"
   },
   "dependencies": {
