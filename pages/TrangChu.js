@@ -1,36 +1,35 @@
+import Image from 'next/image'
 import { useEffect, useState } from 'react';
 //logo_doitac
-import anthien_png from '../src/images/logo_cac_cty_duoc/anthien.png';
-import danapha_png from '../src/images/logo_cac_cty_duoc/danapha.png';
-import DHG_png from '../src/images/logo_cac_cty_duoc/DHG.png';
-import bepharco_png from '../src/images/logo_cac_cty_duoc/bepharco.png';
-import domesco_png from '../src/images/logo_cac_cty_duoc/domesco.png';
-import hetaro_png from '../src/images/logo_cac_cty_duoc/hetaro.png';
-import ymed_png from '../src/images/logo_cac_cty_duoc/ymed.png';
-import mebipha_png from '../src/images/logo_cac_cty_duoc/mebiphar.png';
-import Sanofi_png from '../src/images/logo_cac_cty_duoc/Sanofi.png';
-import sgk_png from '../src/images/logo_cac_cty_duoc/sgk.png';
-import stada_png from '../src/images/logo_cac_cty_duoc/stada.png';
-import DBD_png from '../src/images/logo_cac_cty_duoc/DBD.png';
-import imexpharm_png from '../src/images/logo_cac_cty_duoc/imewpharm.png';
-import LogoOPC_png from '../src/images/logo_cac_cty_duoc/OPC.png';
-import stella_png from '../src/images/logo_cac_cty_duoc/stella.png';
-import vidipha_png from '../src/images/logo_cac_cty_duoc/vidipha.png';
+// import anthien_png from '/logo_cac_cty_duoc/anthien.png';
+// import danapha_png from '/logo_cac_cty_duoc/danapha.png';
+// import DHG_png from '/logo_cac_cty_duoc/DHG.png';
+// import bepharco_png from '/logo_cac_cty_duoc/bepharco.png';
+// import domesco_png from '/logo_cac_cty_duoc/domesco.png';
+// import hetaro_png from '/logo_cac_cty_duoc/hetaro.png';
+// import ymed_png from '/logo_cac_cty_duoc/ymed.png';
+// import mebipha_png from '/logo_cac_cty_duoc/mebiphar.png';
+// import Sanofi_png from '/logo_cac_cty_duoc/Sanofi.png';
+// import sgk_png from '/logo_cac_cty_duoc/sgk.png';
+// import stada_png from '/logo_cac_cty_duoc/stada.png';
+// import DBD_png from '/logo_cac_cty_duoc/DBD.png';
+// import imexpharm_png from '/logo_cac_cty_duoc/imewpharm.png';
+// import LogoOPC_png from '/logo_cac_cty_duoc/OPC.png';
+// import stella_png from '/logo_cac_cty_duoc/stella.png';
+// import vidipha_png from '/logo_cac_cty_duoc/vidipha.png';
 import Header from './Header';
 import Footer from './Footer';
 //avatar_khach
-import CoLanAnh from '../src/images/avatar_khach/CoLanAnh.jpg'
-import CoHang from '../src/images/avatar_khach/CoHang.jpg'
-import ChiHanh from '../src/images/avatar_khach/ChiHanh.jpg'
-import AnhTruong from '../src/images/avatar_khach/AnhTruong.jpg'
+import CoLanAnh from '../public/avatar_khach/CoLanAnh.jpg'
+import CoHang from '../public/avatar_khach/CoHang.jpg'
+import ChiHanh from '../public/avatar_khach/ChiHanh.jpg'
+import AnhTruong from '../public/avatar_khach/AnhTruong.jpg'
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 // import NavMenu from './NavMenu';
-// import { Link } from 'react-router-dom';
 import Link from "next/link"
-// import '../css/TrangChu.css';
 import { API_URL } from '../src/constants/constants'
-import image_default from '../src/images/image-default.jpg'
+import image_default from '../public/image-default.jpg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -1945,7 +1944,6 @@ const TrangChu = (props) => {
                     </div>
                   );
                 })
-
               }
             </Slider>
             <div className="parent_btn_tatca">
@@ -1959,7 +1957,7 @@ const TrangChu = (props) => {
 
       <div className="doitac_par_trangchu">
         <div className="title_sp_trangchu title_trangchu_mobile">Đối tác của thuocsionline.vn</div>
-        <Slider {...settings_doitac}>
+        {/* <Slider {...settings_doitac}>
           <div className="margin_logo">
             <div className="logo_doitac">
               <img src={anthien_png} width="100%" ></img>
@@ -2012,7 +2010,7 @@ const TrangChu = (props) => {
           <div className="logo_doitac">
             <img src={vidipha_png} width="100%"></img>
           </div>
-        </Slider>
+        </Slider> */}
       </div>
 
       {/* danh gia khach hang */}
@@ -2035,7 +2033,14 @@ const TrangChu = (props) => {
           </div>
           <div>
             <div className="danhgia_parent">
-              <img className="avatar_danhgia" src={ChiHanh}></img>
+              {/* <img className="" src={ChiHanh}></img> */}
+              <Image
+                className='avatar_danhgia'
+                src="/avatar_khach/CoLanAnh.jpg"
+                width={50}
+                height={50}
+
+              />
               <div className="thongtin_danhgia">
                 <div className="danhgia_name">Chị Hạnh</div>
                 <div className="danhgia_drugstore">Nhà thuốc Hạnh - Bình Thạnh</div>

@@ -1,7 +1,5 @@
 
-// import '../css/footer.css';
-import logothuocsi from '../src/images/Logo.png';
-// import { Link } from 'react-router-dom';
+import Logo from '../public/Logo.png';
 import React from 'react'
 const Footer = () => {
 
@@ -11,7 +9,7 @@ const Footer = () => {
       <div className='col_iner' style={{ marginLeft: 20 }}>
         <div className='img'>
           <div className='img-inner'>
-            <img width="200" height="36" src={logothuocsi} className="header_logo header-logo" alt="Thuốc sỉ Online"></img>
+            <img width="200" height="36" src={Logo} className="header_logo header-logo" alt="Thuốc sỉ Online"></img>
           </div>
           <div className="lienhe" style={{ color: 'white' }}>
             <p>Thuocsionline.vn website cung cấp thuốc sỉ hàng đầu Việt Nam.</p>
