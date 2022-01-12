@@ -8,7 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
-import image_default from '/image-default.jpg'
+import image_default from '../public/image-default.jpg'
 import { useRouter } from 'next/router'
 
 
@@ -427,9 +427,11 @@ const DetailCombo = (context) => {
                                 <div style={{ paddingLeft: '15px', display: 'flex', paddingRight: '15px' }}>
                                     <div className="CT_mobile_title" style={{ minWidth: '60%', paddingRight: '15px' }}>
 
-                                        {dataCombo.GiftBundle.length > 0 ?
-                                            <small style={{ fontSize: '14.8px', color: '#dc3545', fontWeight: 'bold' }}>Tặng kèm {dataCombo.GiftBundle}</small>
-                                            : null}
+                                        {
+                                            dataCombo.GiftBundle.length > 0 ?
+                                                <small style={{ fontSize: '14.8px', color: '#dc3545', fontWeight: 'bold' }}>Tặng kèm {dataCombo.GiftBundle}</small>
+                                                : null
+                                        }
                                         <hr style={{ width: '100%' }}></hr>
                                         <div className='CT_khunggia'>
                                             <div className='CT_giasp'><h3>{dataCombo.TotalPrice.toLocaleString('it-IT', { style: 'currency', currency: 'VND' })}</h3></div>

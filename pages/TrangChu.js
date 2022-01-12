@@ -1957,60 +1957,140 @@ const TrangChu = (props) => {
 
       <div className="doitac_par_trangchu">
         <div className="title_sp_trangchu title_trangchu_mobile">Đối tác của thuocsionline.vn</div>
-        {/* <Slider {...settings_doitac}>
+        <Slider {...settings_doitac}>
           <div className="margin_logo">
             <div className="logo_doitac">
-              <img src={anthien_png} width="100%" ></img>
+            <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/anthien.png"
+                width={250}
+                height={250}
+              />
             </div>
           </div>
           <div className="margin_logo">
             <div className="logo_doitac">
-              <img src={bepharco_png} width="100%" ></img>
+            <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/bepharco.png"
+                width={250}
+                height={250}
+              />
             </div>
           </div>
           <div className="logo_doitac">
-            <img src={danapha_png} width="100%"></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/danapha.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={DHG_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/DHG.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={domesco_png} width="100%"></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/domesco.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={sgk_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/sgk.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={hetaro_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/hetaro.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={mebipha_png} width="100%"></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/mebipha.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={Sanofi_png} width="100%"></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/Sanofi.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={stada_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/stada.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={ymed_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/ymed.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={DBD_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/DBD.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={imexpharm_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/imewpharm.png"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={LogoOPC_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/LogoOPC.jpg"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={stella_png} width="100%" ></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/stella.jpg"
+                width={250}
+                height={250}
+              />
           </div>
           <div className="logo_doitac">
-            <img src={vidipha_png} width="100%"></img>
+          <Image
+                className='avatar_danhgia'
+                src="/logo_cac_cty_duoc/vidipha.png"
+                width={250}
+                height={250}
+              />
           </div>
-        </Slider> */}
+        </Slider>
       </div>
 
       {/* danh gia khach hang */}
@@ -2018,8 +2098,13 @@ const TrangChu = (props) => {
       <div className="slider_danhgia">
         <Slider {...settings_khachhang}>
           <div>
-            <div className="danhgia_parent">
-              <img className="avatar_danhgia" src={CoLanAnh}></img>
+            <div className="">
+              <Image
+                className='avatar_danhgia'
+                src="/avatar_khach/CoLanAnh.jpg"
+                width={75}
+                height={75}
+              />
               <div className="thongtin_danhgia">
                 <div className="danhgia_name">Cô Lan Anh</div>
                 <div className="danhgia_drugstore">Chủ nhà thuốc Hòa Bình - Buôn Ma Thuột</div>
@@ -2032,16 +2117,14 @@ const TrangChu = (props) => {
             </div>
           </div>
           <div>
-            <div className="danhgia_parent">
-              {/* <img className="" src={ChiHanh}></img> */}
+            <div className="">
               <Image
                 className='avatar_danhgia'
                 src="/avatar_khach/CoLanAnh.jpg"
-                width={50}
-                height={50}
-
+                width={75}
+                height={75}
               />
-              <div className="thongtin_danhgia">
+              <div className="">
                 <div className="danhgia_name">Chị Hạnh</div>
                 <div className="danhgia_drugstore">Nhà thuốc Hạnh - Bình Thạnh</div>
                 <div className="danhgia_comment">
@@ -2053,8 +2136,13 @@ const TrangChu = (props) => {
             </div>
           </div>
           <div>
-            <div className="danhgia_parent">
-              <img className="avatar_danhgia" src={AnhTruong}></img>
+            <div className="">
+              <Image
+                className='avatar_danhgia'
+                src="/avatar_khach/AnhTruong.jpg"
+                width={75}
+                height={75}
+              />
               <div className="thongtin_danhgia">
                 <div className="danhgia_name">Anh Trường</div>
                 <div className="danhgia_drugstore">Nhà thuốc tây số 2 - Vĩnh Long</div>
@@ -2067,9 +2155,14 @@ const TrangChu = (props) => {
             </div>
           </div>
           <div>
-            <div className="danhgia_parent">
-              <img className="avatar_danhgia" src={CoHang}></img>
-              <div className="thongtin_danhgia">
+            <div className="">
+              <Image
+                className='avatar_danhgia'
+                src="/avatar_khach/CoLanAnh.jpg"
+                width={75}
+                height={75}
+              />
+              <div className="">
                 <div className="danhgia_name">Cô Hằng</div>
                 <div className="danhgia_drugstore">Nhà thuốc Vy Vy - Thủ Đức</div>
                 <div className="danhgia_comment">
