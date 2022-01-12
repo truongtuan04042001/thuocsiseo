@@ -317,7 +317,7 @@
   border: none;
   z-index: 1;
   border-radius: 50px;
-  background-image: url('../../public/next_slider.png');
+  background-image: url('../../public/images/next_slider.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 55% 55%;
@@ -339,7 +339,7 @@
   border: none;
   z-index: 1;
   border-radius: 50px;
-  background-image: url('../../public/next_slider.png');
+  background-image: url('../../public/images/next_slider.png');
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;

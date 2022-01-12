@@ -1,36 +1,17 @@
-// import logo from '/user-icon.svg';
-// import menu_tag from '/tag-menu.png';
-// import menu_home from '/home-menu.png';
-// import shopping_bag from '/shopping-bag.png';
-// import messenger_icon from '/messenger-icon.gif';
-// import Article from '/Article.png';
-// import Recommend from '/recommend.png';
-// import Aboutus from '/aboutus.png';
-// import zalo_icon from '/zalo-icon.png';
-// import up from '/up.png';
-// import sale from '/sale.png';
-// import get_a_discount from '/get-a-discount.png';
-import fast_cart from '../public/fast-cart.png';
-// import { Link, NavLink } from 'react-router-dom';
+import fast_cart from '../public/images/fast-cart.png';
 import { useEffect, useState } from 'react';
-// import '../src/css/Header.css';
-// import Modal from 'react-modal';
 // import ModalDangNhap from './modaldangnhap';
 // import ModalKhachHang from './modalkhachhang';
 // import PopupMenu from './PopupMenu';
 import { API_URL } from '../src/constants/constants'
-// import { useHistory } from 'react-router-dom';
 import { useRouter } from 'next/router'
 import Link from "next/link"
 import React from 'react'
 
 
-// let maNV = "null"
-// Modal.setAppElement('#root')
 
 const Header = (props) => {
 
-  // const history = useHistory();
   const router = useRouter()
   const [ten, setTen] = useState();
 

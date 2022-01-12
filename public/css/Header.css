@@ -219,7 +219,7 @@
 }
 
 .input_search {
-  background: url('../../public/search.png') no-repeat scroll 5% 50%;
+  background: url('../../public/images/search.png') no-repeat scroll 5% 50%;
   width: 33%;
   background-color: white;
   border: 1px solid darkgrey;

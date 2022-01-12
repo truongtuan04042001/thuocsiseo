@@ -8,7 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
-import image_default from '../public/image-default.jpg'
+import image_default from '../public/images/image-default.jpg'
 import { useRouter } from 'next/router'
 
 

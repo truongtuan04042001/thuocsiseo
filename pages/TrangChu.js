@@ -1,46 +1,23 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
-//logo_doitac
-// import anthien_png from '/logo_cac_cty_duoc/anthien.png';
-// import danapha_png from '/logo_cac_cty_duoc/danapha.png';
-// import DHG_png from '/logo_cac_cty_duoc/DHG.png';
-// import bepharco_png from '/logo_cac_cty_duoc/bepharco.png';
-// import domesco_png from '/logo_cac_cty_duoc/domesco.png';
-// import hetaro_png from '/logo_cac_cty_duoc/hetaro.png';
-// import ymed_png from '/logo_cac_cty_duoc/ymed.png';
-// import mebipha_png from '/logo_cac_cty_duoc/mebiphar.png';
-// import Sanofi_png from '/logo_cac_cty_duoc/Sanofi.png';
-// import sgk_png from '/logo_cac_cty_duoc/sgk.png';
-// import stada_png from '/logo_cac_cty_duoc/stada.png';
-// import DBD_png from '/logo_cac_cty_duoc/DBD.png';
-// import imexpharm_png from '/logo_cac_cty_duoc/imewpharm.png';
-// import LogoOPC_png from '/logo_cac_cty_duoc/OPC.png';
-// import stella_png from '/logo_cac_cty_duoc/stella.png';
-// import vidipha_png from '/logo_cac_cty_duoc/vidipha.png';
 import Header from './Header';
 import Footer from './Footer';
-//avatar_khach
-import CoLanAnh from '../public/avatar_khach/CoLanAnh.jpg'
-import CoHang from '../public/avatar_khach/CoHang.jpg'
-import ChiHanh from '../public/avatar_khach/ChiHanh.jpg'
-import AnhTruong from '../public/avatar_khach/AnhTruong.jpg'
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 // import NavMenu from './NavMenu';
 import Link from "next/link"
 import { API_URL } from '../src/constants/constants'
-import image_default from '../public/image-default.jpg'
+import image_default from '../public/images/image-default.jpg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-// import { userouter } from 'react-router-dom';
 import { useRouter } from 'next/router'
-//React-toastify
 import React from 'react'
 import { Helmet } from "react-helmet";
 import { ReactSearchAutocomplete } from 'react-search-autocomplete'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Head from 'next/head'
 
 toast.configure()
 const customId = "custom-id-yes";
@@ -1189,29 +1166,41 @@ const TrangChu = (props) => {
     layMaNV()
   }, [props.rand])
 
+  const [innerWidth, setInnerWidth] = useState(0)
+  useEffect(() => {
+    const abc = window.innerWidth
+    // console.log(`${new Date().getTime()} abc=`, abc)
+    setInnerWidth(abc)
+  }, [])
+
   return (
     <div>
-      <Helmet>
-        <title>Trang Chủ</title>
-        <meta name="description" content="Trang chủ 123" />
-      </Helmet>
+      <Head>
+        <title>Trang Chủ  ádfádfádf</title>
+        <meta name="description" content="Trang chủ ấdfádfádfádf" />
+      </Head>
       <Header valueOfModal={openModalDN} OPModalDN={OPModalDN} callBackApp={DangNhapApp} LayGiaTriSearch={SearchProduct} upDate={lamMoiGH} />
-      {/* {window.innerWidth < 425 ? */}
-      <div className="header_mobile_trangchu">
-        {/* <a href="http://thuocsionline.vn/">
-          <img width="160" height="28" src="images/logo.png" className="header_logo_trangchu header_logo header-logo" alt="Thuốc sỉ Online"></img>
-        </a> */}
-        <div className="header_child trangchu_header_infor">
-
-        </div>
-      </div>
-      {/* : null
-      } */}
+      {
+        innerWidth < 425 ?
+          <div className="header_mobile_trangchu">
+            <a href="http://thuocsionline.vn/">
+              {/* <img width="160" height="28" src="" className="header_logo_trangchu header_logo header-logo" alt="Thuốc sỉ Online"></img> */}
+              <Image
+                className='avatar_danhgia'
+                src="/images/logo.png"
+                width={160}
+                height={28}
+              />
+            </a>
+            <div className="header_child trangchu_header_infor">
+            </div>
+          </div>
+          : null
+      }
       <div className="btn-nav-parent">
         {/* <NavMenu /> */}
       </div>
       <div className='search_trangchu_mobile1'>
-
         <div onKeyPress={handleKeyPress} >
           <ReactSearchAutocomplete
             items={input}
@@ -1229,19 +1218,14 @@ const TrangChu = (props) => {
             fuseOptions={{
               shouldSort: true,
               threshold: 0.0,
-              // location: 0,
-              // distance: 100,
               ignoreLocation: true,
               maxPatternLength: 32,
               minMatchCharLength: 1,
               keys: ["TenHang", "HoatChat", "HangSX"]
             }}
             resultStringKeyName="linkhinh"
-            //formatResult={formatResult}
             formatResult={(item) => {
-
               let mangItem = item.split("?")
-
               return (
                 <div className="item_search_parent_trangchu">
                   <div className="item_search_image">
@@ -1253,7 +1237,6 @@ const TrangChu = (props) => {
               );
 
             }}
-
             styling={{
               height: "44px",
               border: "1px solid #dfe1e5",
@@ -1273,7 +1256,6 @@ const TrangChu = (props) => {
             }}
           />
         </div>
-
       </div>
       <div className="slider_banner_trangchu" style={{ marginBottom: 20, width: "80%", margin: "auto" }}>
         <ImageGallery
@@ -1960,9 +1942,9 @@ const TrangChu = (props) => {
         <Slider {...settings_doitac}>
           <div className="margin_logo">
             <div className="logo_doitac">
-            <Image
+              <Image
                 className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/anthien.png"
+                src="/images/logo_cac_cty_duoc/anthien.png"
                 width={250}
                 height={250}
               />
@@ -1970,125 +1952,125 @@ const TrangChu = (props) => {
           </div>
           <div className="margin_logo">
             <div className="logo_doitac">
-            <Image
+              <Image
                 className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/bepharco.png"
+                src="/images/logo_cac_cty_duoc/bepharco.png"
                 width={250}
                 height={250}
               />
             </div>
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/danapha.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/danapha.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/DHG.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/DHG.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/domesco.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/domesco.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/sgk.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/sgk.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/hetaro.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/logo_cac_cty_duoc/hetaro.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/mebipha.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/mebipha.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/Sanofi.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/Sanofi.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/stada.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/stada.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/ymed.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/ymed.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/DBD.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/DBD.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/imewpharm.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/imewpharm.png"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/LogoOPC.jpg"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/LogoOPC.jpg"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/stella.jpg"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/stella.jpg"
+              width={250}
+              height={250}
+            />
           </div>
           <div className="logo_doitac">
-          <Image
-                className='avatar_danhgia'
-                src="/logo_cac_cty_duoc/vidipha.png"
-                width={250}
-                height={250}
-              />
+            <Image
+              className='avatar_danhgia'
+              src="/images/logo_cac_cty_duoc/vidipha.png"
+              width={250}
+              height={250}
+            />
           </div>
         </Slider>
       </div>
@@ -2101,7 +2083,7 @@ const TrangChu = (props) => {
             <div className="">
               <Image
                 className='avatar_danhgia'
-                src="/avatar_khach/CoLanAnh.jpg"
+                src="/images/avatar_khach/CoLanAnh.jpg"
                 width={75}
                 height={75}
               />
@@ -2120,7 +2102,7 @@ const TrangChu = (props) => {
             <div className="">
               <Image
                 className='avatar_danhgia'
-                src="/avatar_khach/CoLanAnh.jpg"
+                src="/images/avatar_khach/CoLanAnh.jpg"
                 width={75}
                 height={75}
               />
@@ -2139,7 +2121,7 @@ const TrangChu = (props) => {
             <div className="">
               <Image
                 className='avatar_danhgia'
-                src="/avatar_khach/AnhTruong.jpg"
+                src="/images/avatar_khach/AnhTruong.jpg"
                 width={75}
                 height={75}
               />
@@ -2158,7 +2140,7 @@ const TrangChu = (props) => {
             <div className="">
               <Image
                 className='avatar_danhgia'
-                src="/avatar_khach/CoLanAnh.jpg"
+                src="/images/avatar_khach/CoLanAnh.jpg"
                 width={75}
                 height={75}
               />

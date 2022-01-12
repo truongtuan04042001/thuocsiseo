@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header';
 // import Footer from '../components/Footer';
 import { API_URL } from '../src/constants/constants'
-import image_default from '../public/image-default.jpg'
+import image_default from '../public/images/image-default.jpg'
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 // import { useHistory } from 'react-router-dom';
