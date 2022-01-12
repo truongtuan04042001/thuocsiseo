@@ -1,0 +1,136 @@
+.thu-nghiem-zoom img{
+    display:block;
+    transition: all .3s ease;
+    cursor: pointer;
+    width: 100%;
+    height: 450px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.thu-nghiem-zoom img:hover{
+    transform: scale(1.1);
+    opacity: 90%;
+}
+.thu-nghiem-zoom p{
+    display:block;overflow: hidden;
+}
+.thu-nghiem-zoom{
+    width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.tamnhin{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.sumenh{
+    width: 100%;
+    display: flex;
+}
+.tnsm{
+    width: 35%;
+}
+.tnsm h2{
+    color: #027525;
+    text-align: center;
+}
+.tnsm h3{
+    border-left: 3px solid #027525;
+    padding: 10px;
+    font-style: italic;
+    color: #777;
+}
+.titlesm{
+    width: 65%;
+    color: #777;
+    text-align: justify;
+}
+.dvchinh{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.gachtran{
+    width: 30%;
+    display: block;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 2px;
+    opacity: .1;
+    background-color: currentColor;
+    align-self: center
+}
+.titledv{
+    width: 100%;
+    display: flex;
+}
+.section-title-main{
+    width: 40;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tagthuoc{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tagt1{
+    width: 22%;
+    margin: 0 auto;
+    text-align: center;
+}
+.tagt1 h3{
+    color: #027525;
+}
+.tagt1 p{
+    color: #777;
+    font-size: 16px;
+}
+.camket{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.camket h3{
+    color: #027525;
+}
+.bdcamket{
+    border: 1px solid rgb(242, 242, 242);
+    margin-top: 10px;
+    color: #777;
+}
+@media (max-width:1000px) {
+     .tamnhin{
+         width: 100%;
+     }
+     .thu-nghiem-zoom img{
+         height: 200px;
+     }
+     .dvchinh{
+         width: 95%;
+         flex-wrap: wrap;
+     }
+     .tagthuoc{
+         flex-wrap: wrap;
+     }
+
+ }
+ @media (max-width:1000px) {
+     .tagt1{
+         width: 50%;
+     }
+ } @media (max-width:600px) {
+     .tagt1{
+         width: 100%;
+     }
+ }

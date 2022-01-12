@@ -1,0 +1,116 @@
+.listbaiviet{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+
+}
+.listarticle{
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+.hinhbaiviet{
+    width: 300px;
+    height: 215px;
+    background-color: #fff;
+    justify-content: center;
+    align-self: center;
+    padding-top: 10px;
+}
+.tieudebaiviet{
+    width: 70%;
+    padding-left: 20px;
+font-size: 1.15em;
+}
+.tieudebaiviet1{
+    width: 35%;
+    padding-left: 20px;
+
+}
+.thumb3 {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overfl4{
+    width:100%;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     text-align: left;
+     font-size: .9em;
+}
+.bordertong{
+    border-right: 1px solid rgba(0,0,0,.125);
+}
+.overfl5{
+    width:100%;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     text-align: left;
+     font-size: 1em;
+}
+.searcharticle{
+    margin: 0 auto;
+    width: 100%;
+}
+.titlebv{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.titlenew{
+    width: 70%;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding-bottom: 20px;
+color: rgb(0, 171, 85);
+}
+.titlenew:hover{
+    color: #a8b324;
+}
+.overfl4:hover{
+    color: #a8b324 !important;
+} 
+.DetailArticle{
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+}
+
+.postArtile{
+    height: 300px;
+}
+
+#main {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 153, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: hidden;
+    border: none;
+  }
+  
+  #main div {
+     flex: 1;
+  }
+  @media (max-width:1000px) {
+    .listbaiviet {
+
+        width: 100%;
+    }
+}

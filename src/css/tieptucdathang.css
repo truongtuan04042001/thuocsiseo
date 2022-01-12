@@ -1,0 +1,571 @@
+.phan-giua {
+    padding: 0 30px 30px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    align-items: center;
+    background-color: white;
+}
+
+.phankhongco-dnhap-dki {
+    margin: 0 auto;
+    padding-bottom: .5em;
+    flex-wrap: wrap;
+}
+
+.phan-dki {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .5em;
+}
+
+.vcb {
+    align-self: center;
+}
+
+.click {
+    color: #334862;
+    text-decoration: none;
+}
+
+.chia-nua {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:768px) {
+    .nua-trai {
+        width: 100% !important;
+    }
+    .nua-phai {
+        width: 100% !important;
+    }
+}
+
+.nua-trai {
+    width: 48%;
+    padding-top: 15px;
+    border-top: 2px solid #ddd;
+    margin: 0 auto;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+    padding-bottom: 20px;
+    border-radius: 15px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+}
+
+.aa {
+    width: 100%;
+    display: flex;
+}
+
+.nua-trai h3 {
+    font-size: 1.1em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.phanchia {
+    width: 48%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+}
+
+.phanchia2 {
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+    padding-top: .5em;
+}
+
+.input-text {
+    width: 100%;
+    font-size: 13px;
+    background-color: white;
+    padding: 10px 0px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+}
+
+.input-text-select {
+    width: 100%;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+    margin-top: 10px;
+}
+
+.nua-phai {
+    width: 40%;
+    padding-top: 15px;
+    border: 2px solid #088b08;
+    padding: 0 15px 30px;
+    margin-left: 20px;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+}
+
+.donthanhtoan {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    flex-wrap: wrap;
+}
+
+.don {
+    font-size: 1.1em;
+    overflow: hidden;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.order_review {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    border-bottom: 1.5px solid #ececec;
+    line-height: 1.3;
+    font-size: .7em;
+    font-weight: bolder;
+}
+
+.tam-tinh {
+    width: 28%;
+    text-align: right;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+}
+
+.tam-tinh3 {
+    width: 10%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+}
+
+.tam-tinh4 {
+    width: 65%;
+    text-align: right;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.tam-tinh5 {
+    width: 15%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    font-size: 8pt;
+    padding: 5px;
+    border-left: 3px solid #ececec;
+}
+
+.tam-tinh6 {
+    width: 3%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    font-size: 12px;
+    border-left: 3px solid #ececec;
+}
+
+.tam-tinh2 {
+    width: 3%;
+    text-align: right;
+    float: right;
+    flex-wrap: wrap;
+    font-size: 12px;
+    padding: 5px;
+    border-left: 3px solid #ececec;
+}
+
+.Pagination-rowsLabel-26 {
+    font-size: 0.75rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    padding-right: 0px !important;
+    letter-spacing: 0.03333em;
+}
+
+.Pager-pager-18 {
+    flex: none;
+    display: flex;
+    padding: 12px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center !important;
+}
+
+.sanpham {
+    flex-wrap: wrap;
+    width: 35%;
+    text-align: left;
+    float: left;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.order_review1 {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+    line-height: 1.3;
+    font-size: .6em;
+    background-color: white;
+}
+
+.sanpham31 {
+    width: 40%;
+    font-size: 9pt;
+    border-left: 1px solid #ececec;
+}
+
+.sanpham311 {
+    width: 25%;
+    font-size: 9pt;
+    border-left: 1px solid #ececec;
+    text-align: center;
+}
+
+.dathang {
+    padding: 10px 25px 10px;
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+    background-color: #00CC00;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .97em;
+    letter-spacing: .03em;
+    cursor: pointer;
+    vertical-align: middle;
+    text-shadow: none;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.tratien {
+    font-weight: bold;
+}
+
+.btn-dathang {
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.btn-dathang :hover {
+    background-color: #088b08;
+}
+
+/* width */
+
+.neolai ::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+
+.neolai ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+.neolai ::-webkit-scrollbar-thumb {
+    background: #00b37d;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.neolai ::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
+
+.btn_nhanqua:hover {
+    color: green;
+}
+
+.btn_nhanqua {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.item_gift_ttdh:hover {
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid green;
+    background-color: rgb(252, 252, 252);
+}
+
+.item_gift_ttdh {
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    border: 1px solid black;
+    position: relative;
+    color: black;
+}
+
+.item_time_gift_ttdh:hover {
+    box-shadow: 0 8px 20px rgb(0 0 0/20%);
+}
+.div_scroll_voucher{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+@media (min-width: 1028px) {
+    .item_time_gift_ttdh {
+        width: 250px !important;
+        margin: auto;
+    }
+    /* .item_clock_gift_ttdh {
+        position: absolute;
+        top: -35px;
+        right: 20px !important;
+    } */
+}
+
+.item_time_gift_ttdh {
+    /* width: 100%; */
+    width: 250px;
+    cursor: pointer;
+    background-color: white;
+    /* background-image: linear-gradient(45deg, rgb(210, 219, 84), rgb(116, 240, 116)); */
+    padding: 30px 0px 10px 0px;
+    /* margin-top: 30px;
+    margin-bottom: 10px; */
+    margin: 30px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    border: 3px solid green;
+    position: relative;
+    color: white;
+}
+.item_time_gift_ttdh_2 {
+    /* width: 100%; */
+    width: 250px;
+    cursor: pointer;
+    background-color: white;
+    /* background-image: linear-gradient(45deg, rgb(210, 219, 84), rgb(116, 240, 116)); */
+    padding: 30px 0px 10px 0px;
+    /* margin-top: 30px;
+    margin-bottom: 10px; */
+    margin: 30px auto 10px auto;
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    align-items: center;
+    border: 4px solid orangered;
+    position: relative;
+    color: white;
+}
+.item_name_gift_ttdh {
+    width: 70%;
+    word-wrap: break-word;
+    /* margin-left: 5px; */
+    padding-left: 5px;
+    /* display: flex;
+    justify-content: flex-start; */
+}
+
+.item_gif_gift_ttdh {
+    width: 30%;
+    border-right: 1px solid gray;
+}
+
+.div_scroll_voucher_par ::-webkit-scrollbar {
+    width: 5px;
+    margin-right: -5px;
+}
+
+/* Track */
+
+.div_scroll_voucher_par ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+
+.div_scroll_voucher_par ::-webkit-scrollbar-thumb {
+    background: #00b37d;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.div_scroll_voucher_par ::-webkit-scrollbar-thumb:hover {
+    background: green;
+}
+
+@media (max-width: 768px) {
+    .item_gift_ttdh_mobile {
+        flex-direction: column;
+        margin-top: 30px !important;
+    }
+    .item_gift_ttdh_mobile_2 {
+        flex-direction: column;
+        border: 4px solid orangered;
+        margin-top: 30px !important;
+    }
+    .item_gif_ttdh_mobile {
+        width: 100% !important;
+        border-left: none !important;
+    }
+    /* .item_name_gift_ttdh_mb {
+        width: 90% !important;
+        border-left: none !important;
+        padding-top: 10px;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        margin-top: 0px !important;
+    } */
+    .item_clock_gift_ttdh {
+        position: absolute;
+        top: -20px !important;
+        right: 12.5% !important;
+        /* background-color: red; */
+    }
+    .Clock-parent {
+        width: 70% !important;
+    }
+    /* {
+        font-size: 10px !important;
+        width: 25px !important;
+    } */
+    .Clock-days{
+        font-size: 10px !important;
+        width: 40px !important;
+        margin-left: 0px !important;
+        margin-right: 5px !important;
+
+    }
+    .Clock-hours, .Clock-minutes, .Clock-seconds {
+        font-size: 10px !important;
+        width: 40px !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+    .title_clock_ttdh {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/digital-7.ttf);
+}
+
+/* .Clock-hours{
+    font-size: 14px;
+    width: 35px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+}
+ .Clock-days {
+    font-size: 14px;
+    width: 34px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    color: white;
+    text-shadow: 0px 1px 1px black;
+} */
+.Clock-days{
+    font-size: 14px;
+    width: 48px;
+    /* margin-left: 2.5px; */
+    margin-right: 2.5px;
+    color: white;
+    /* text-shadow: 0px 1px 1px black; */
+}
+.Clock-hours, .Clock-minutes, .Clock-seconds {
+    /* font-family: myFirstFont; */
+    font-size: 14px;
+    width: 48px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    color: white;
+    /* text-shadow: 0px 1px 1px black; */
+    /* font-weight: bold; */
+    /* background-color: red; */
+}
+
+.Clock-parent {
+    width: 220px;
+    /* background-color: rgb(0, 153, 255); */
+    padding: 5px;
+    border-radius: 5px;
+    /* border-top-right-radius: 5px; */
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); */
+    margin: auto;
+}
+
+.item_clock_gift_ttdh {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    margin: auto;
+}
+
+.title_clock_ttdh {
+    display: none;
+    background-color: green;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: -35px;
+    right: 56%;
+}
+
+.Clock_days_title, .Clock_hours_title, .Clock_minutes_title, .Clock_seconds_title {
+    background-color: green;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 40px;
+    height: 25px;
+    margin: auto;
+    text-shadow: 0px 1px 1px black;
+}

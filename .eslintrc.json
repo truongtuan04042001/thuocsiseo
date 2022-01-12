@@ -1,3 +1,40 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "react/prop-types": "off",
+        "no-useless-escape":"off",
+        "react/react-in-jsx-scope":"off",
+        "no-unused-vars":"off",
+        "react/jsx-key":"off",
+        "react/no-unknown-property":"off",
+        "no-extra-semi":"off",
+        "no-empty":"off",
+        "react/no-unescaped-entities":"off",
+        "react/jsx-no-duplicate-props":"off",
+        "react/display-name":"off",
+        "no-constant-condition":"off",
+        "no-redeclare":"off",
+        "no-dupe-keys":"off",
+        "no-cond-assign":"off",
+        "no-case-declarations":"off",
+        "react/jsx-no-target-blank":"off"
+        
+      }
 }

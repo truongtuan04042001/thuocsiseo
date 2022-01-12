@@ -1,0 +1,52 @@
+.dA01TitleSuccess {
+    margin: auto;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    line-height: 5em;
+    border: .2em solid #00af00;
+    color: #00af00;
+}
+.dA01TitleWarning {
+    margin: auto;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    line-height: 5em;
+    border: .2em solid #ffaf00;
+    color: #ffaf00;
+}
+.dA01TitleError {
+    margin: auto;
+    width: 8em;
+    height: 8em;
+    border-radius: 50%;
+    line-height: 5em;
+    border: .2em solid #ff0000;
+    color: #ff0000;
+}
+.dA02p { 
+    text-align: center;
+    font-size: 3em; 
+    margin-top: 1.5vw;
+ }
+.dA03ps { 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: #00af00
+ }
+ 
+.dA03pw { 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: #ffaf00
+ }
+.dA03pe { 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: #ff0000
+ }
+
+ .dA04Actions{
+     font-size: large;
+ }

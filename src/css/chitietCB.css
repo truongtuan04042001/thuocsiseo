@@ -1,0 +1,92 @@
+.anhtenchitiet{
+    width: 90%;
+    margin: 0 auto;
+
+}
+.BangCTCB{
+    width: 100%;
+      box-shadow: 3px 3px 9px rgb(0 0 0 / 8%);
+    margin-top: 20px;
+}
+
+.hinhAnhSpCB{
+    width: 20%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+    border-top: 1.5px solid #ececec;
+    background-color: #9bbb59;
+}
+
+.hinhAnhSpCB1{
+    width: 20%;
+    text-align: left;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tenSpCB{
+    width: 40%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+    border-top: 1.5px solid #ececec;
+    background-color: #9bbb59;
+}
+.tenSpCB1{
+    width: 40%;
+    text-align: left;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+}
+.dvtCB{
+    width: 10%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+  
+}
+.slCB{
+    width: 10%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+    border-right: 1.5px solid #ececec;
+}
+.dvtCB1{
+    width: 10%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+    border-top: 1.5px solid #ececec;
+    background-color: #9bbb59;
+ 
+}
+.slCB1{
+    width: 10%;
+    text-align: center;
+    float: right;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-left: 1.5px solid #ececec;
+    border-right: 1.5px solid #ececec;
+    border-top: 1.5px solid #ececec;
+    background-color: #9bbb59;
+}

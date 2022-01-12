@@ -1,0 +1,181 @@
+.vethuocsi{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.tagthuocsi{
+    width: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tagthuocsi1{
+    /* height: 400px; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    zoom: 82%;
+}
+.hinhabout {
+    width: 170px;
+    height: 130px;
+    margin: 0 auto;
+    justify-content: center;
+    align-self: center;
+
+}
+.tungcai{
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+    color: #027525;
+    margin-top: 30px;
+}
+.tungcai1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #027525;
+    margin-top: 30px;
+}
+.thumb4 {
+    width: 100%;
+    height: 120px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.tagthuocsi h2{
+    color: #027525;
+    font-size: 20px;
+}
+.tagthuocsi p{
+   font-size: 16px;
+   font-family: sans-serif;
+   color: #4b4d4c;
+   text-align: justify;
+
+}
+.divlienhe{
+    background-color: #027525;
+    display: flex;
+}
+.cangiuaaa{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #027525;
+    display: flex;
+    align-self: center;
+}
+.lienhe{
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+}
+.resp p{
+    font-size: 14px;
+  }
+.kct{
+    display: flex;
+    align-self: center;
+    margin: 0 auto;
+    padding: 20px;
+    zoom: 80%;
+}
+.tungcai h3{
+    color: #fff;
+}
+.doitra{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.hinhabout1 {
+    
+    width: 90%;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.thumb5 {
+    width: 100%;
+    height: 700px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.articles_container1 {
+    width: 70%;
+    margin: 0 auto;
+}
+.Quatrangsp{
+    padding: 15px;
+    background-color: #027525;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.Quatrangsp:hover{
+    opacity: 80%;
+}
+@media (max-width:1000px) {
+    .vethuocsi{
+        width: 100%;
+        flex-wrap: wrap;    } 
+    .tagthuocsi1{
+        height: auto;
+    }
+    .tagthuocsi{
+        width: 95%;
+    }
+    .cangiuaaa{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .resp{
+        width: 100% !important;
+    }
+    .lienhe{
+        width: 100%;
+    }
+    .doitra{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .repsi{
+        width: 95% !important;
+    }
+    .kct{
+        flex-wrap: wrap;
+    }
+    .Quatrangsp{
+        margin-bottom: 20px !important;
+    margin: 0 auto;
+    }
+    .thumb5{
+        width: 100%;
+        height: 400px;
+    }
+}
+.repsi{
+    zoom: 70%;
+}
+.sss{
+    margin: 0 auto;
+}
+@media (max-width:600px) {
+    .tungcai{
+        width: 50%;
+    }
+}@media (max-width:500px) {
+    .tungcai{
+        width: 95%;
+    }
+}

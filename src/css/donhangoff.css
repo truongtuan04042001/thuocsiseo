@@ -1,0 +1,66 @@
+.DHO_body {
+    width: 90%;
+    margin: auto;
+}
+
+.phanchia1 {
+    width: 20%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+}
+
+.phanchia12 {
+    width: 23%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+}
+
+.input-text {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    background-color: white;
+    padding: 10px 0px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.bodi{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}
+.phanchia12 {
+    width: 47%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 4%;
+    padding-top: .5em;
+}
+
+.DHO-chia-nua {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.DHO_TKDH {
+    width: 75%;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.DHO-nua-trai h3 {
+    font-size: 1.1em;
+    overflow: hidden;
+    font-weight: bolder;
+    text-transform: uppercase;
+}

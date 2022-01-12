@@ -1,0 +1,1515 @@
+.div_body {
+    background-color: rgb(244, 247, 252);
+    margin: auto;
+    width: 100%;
+    line-height: 1.43;
+    font-weight: 400;
+}
+
+.div_khung {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.div_trai {
+    max-width: 40%;
+    flex-wrap: wrap;
+}
+
+.div_traidtl {
+    min-width: 13%;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 950px) {
+    .div_trai {
+        display: none !important;
+    }
+
+    .div_traidtl {
+        display: none !important;
+    }
+}
+
+.h4_ten {
+    margin: 0;
+    font-size: 1.7rem;
+    font-family: sans-serif;
+    font-weight: 700 !important;
+    text-transform: capitalize;
+    line-height: 1.334;
+    width: 220px;
+    word-wrap: break-word;
+}
+
+.ul_style {
+    margin: auto;
+    padding: 0;
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    list-style: none;
+    padding-right: 5px;
+}
+
+.a_style {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.li_styleTT {
+    border: none;
+    color: #00AB55;
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.li_styleTT1 {
+    border: none;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.li_styleDH {
+    border: none;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.li_styleDH1 {
+    border: none;
+    color: #00AB55;
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.li_styleDTL {
+    border: none;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.li_styleDTL1 {
+    border: none;
+    color: #00AB55;
+    font-size: 1.1rem;
+    font-weight: 500 !important;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+.li_styleTT:hover {
+    color: #00AB55;
+}
+
+.TTTK_svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    font-size: 1.45rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.div_phai {
+    width: 80%;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+.div_phaidtl {
+    width: 70%;
+    padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .div_khung {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .div_phai {
+        max-width: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+    .div_phaidtl {
+        max-width: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+
+    .div_diemthuong {
+        max-width: 100%;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        margin-bottom: 50px;
+    }
+}
+
+.txt_capnhat {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #00b46e;
+}
+
+.k_thongtin {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.k_input {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.k_inputdiachi {
+    width: 100%;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.k_form {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: flex;
+}
+
+.label {
+    color: #000;
+    font-size: 1rem;
+}
+
+.tk_input {
+    width: 100%;
+    font-size: 13px;
+    background-color: white;
+    padding: 10px 0px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.k_chuattdn {
+    width: 100%;
+    display: flex;
+}
+
+.k_banla {
+    width: 20%;
+    padding-right: 15px;
+}
+
+.k_tennhathuoc {
+    width: 80%;
+    padding-left: 0px;
+}
+
+@media screen and (max-width: 960px) {
+    .k_chuattdn {
+        width: 100%;
+        flex-grow: 0;
+        display: block;
+    }
+
+    .k_banla {
+        width: 100%;
+    }
+
+    .k_tennhathuoc {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.tk_input_TTDN {
+    min-width: 98.5%;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 0px 10px 12px;
+    border-color: rgb(206, 212, 218)
+}
+
+.bt_submit {
+    background-color: #f9b514;
+    border-color: #f9b514;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    text-transform: none;
+    border: none;
+    cursor: pointer;
+}
+
+.o_chua {
+    width: 100%;
+    padding: 10px;
+}
+
+@media screen and (min-width: 960px) {
+    .khungbocngoaibutton {
+        flex-grow: 0;
+        max-width: 50%;
+        flex-basis: 50%;
+    }
+}
+
+.khungbocngoaibutton {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #b7c7c1;
+    border-radius: 6px;
+}
+
+.k_button {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.svg_root {
+    color: rgba(0, 0, 0, 0.54);
+    fill: currentColor;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    user-select: none;
+    transition: fill;
+}
+
+.nutbutton {
+    background-color: white;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.bt_doimk {
+    background-color: white;
+    color: #00AB55;
+    padding: 6px 8px;
+    font-size: 1rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.bt_taifile {
+    background-color: rgb(0, 180, 110);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0;
+    font-size: 1.3rem;
+}
+
+.k_diachi {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.k_inputdiachi {
+    width: 35%;
+    display: flex;
+    padding: 0px 20px 0px 0px;
+}
+
+.k_tinhTP {
+    width: 30%;
+}
+
+.tk_inputdiachi {
+    width: 100%;
+    font-size: 13px;
+    background-color: white;
+    padding: 10px 10px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.khungchua_select {
+    max-width: 100%;
+    font-size: 18px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+    .k_diachi {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .k_inputdiachi {
+        width: 100%;
+    }
+
+    .k_tinhTP {
+        flex-basis: 100%;
+        max-width: 100%;
+        flex-grow: 0;
+    }
+}
+
+.nut_select {
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    height: 1.9em;
+    padding: 18.5px 5px;
+    font: inherit;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Modal ThayDoiMatKhau */
+
+.modal_khungnoidung {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(244, 247, 252);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 1.25em;
+    outline: 0px;
+}
+
+@media screen and (max-width: 767px) {
+    .modal_khungnoidung {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgb(244, 247, 252);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 1.25em;
+        outline: 0px;
+    }
+}
+
+.modal_header {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid rgba(195, 204, 220, 0.4);
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.modal_title {
+    padding: 1rem 2rem;
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 0px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.modal_content {
+    width: auto;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.modal_input {
+    width: 95%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px 0px 10px;
+}
+
+.modal_input2 {
+    width: 100%;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px 10px 10px;
+}
+
+.modal_forminput {
+    width: 95%;
+    height: 50px;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1.1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 0px 0px 0px 10px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.svg_icon {
+    color: rgba(0, 0, 0, 0.54);
+    fill: currentColor;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    user-select: none;
+    transition: fill;
+}
+
+.modal_button {
+    background: linear-gradient(102.04deg, rgb(0, 180, 110) 0%, rgb(154, 193, 0) 100%);
+    height: 50px;
+    width: 50%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+/* DonHangCuaToi */
+
+.DHCT_XemTT {
+    width: 100%;
+}
+
+.DHCT_taiday {
+    color: #00b46e !important;
+}
+
+.DHCT_KhungDH {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin: 0 auto;
+}
+
+.DHCT_Menu {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn_don_hang {
+    width: 100%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0px 0px;
+    margin: 5px 0px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.item_don_hang_head {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(7, 151, 7);
+    padding: 10px 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item_don_hang_body {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-around; */
+    padding: 20px 0px;
+    /* background-color: red; */
+}
+
+.btn_huy_don_hang {
+    /* width: 90%; */
+    padding: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_huy_don_hang:hover {
+    background-color: rgb(219, 9, 9);
+}
+
+.item_don_hang_body_mobile {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width:768px) {
+    .DHCT_KhungDH {
+        width: 100% !important;
+        padding-left: 0px !important;
+    }
+
+    .DHCT_Menu button {
+        font-size: 12px;
+    }
+
+    .bam_vao_dh {
+        font-size: 8px !important;
+    }
+
+    .item_don_hang_body_mobile {
+        display: block;
+        margin-left: 5px;
+        /* background-color: red; */
+    }
+
+    .mobile_item_don_hang_price {
+        width: 100% !important;
+        justify-content: flex-start !important;
+
+    }
+
+    .mobile_item_don_hang_tt {
+        width: 100% !important;
+        margin-top: 10px;
+    }
+
+    .btn_huy_don_hang {
+        margin-right: 5px;
+    }
+}
+.DHCT_btn_active {
+    /* min-width: 130px; */
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    min-height: 48px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.75;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+    color: #00AB55;
+    border-bottom: 3px solid #00AB55;
+}
+.DHCT_btn {
+    /* min-width: 130px; */
+    padding: 6px 12px;
+    font-size: 0.875rem;
+    min-height: 48px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.75;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-right: 5px;
+}
+
+.DHCT_btn:hover {
+    color: #00AB55;
+}
+
+.DHCT_btn:focus {
+    color: #00AB55;
+    border-bottom: 3px solid #00AB55;
+}
+
+.DHCT_span {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.DHCT_span:focus {
+    color: #00b46e !important;
+}
+
+.DHCT_Content {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.DHCT_btnDHN {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(0, 180, 110) !important;
+    border: 1px solid transparent !important;
+    padding: 0.375rem 0.75rem !important;
+    font-size: 1rem !important;
+    line-height: 1.5 !important;
+    border-radius: 50px !important;
+    text-transform: none !important;
+    cursor: pointer;
+}
+
+/* CSS MaGiamGia */
+
+.MGG_divcontent {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(244, 247, 252);
+    min-height: 80vh;
+}
+
+.MGG_Container {
+    padding-top: 0px;
+}
+.MGG_title_markup img{
+    width: 100% !important;
+}
+.MGG_h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    font-size: 2.125rem;
+    font-weight: 600;
+    list-style: 1.235;
+    margin-top: 20px;
+}
+
+/* CSS ChiTietSanPham */
+.CTSP_Khung .search_trangchu_mobile1 .sc-ifAKCX .wrapper{
+    z-index: 0 !important;
+}
+.CTSP_Khung {
+    margin: auto;
+    width: 90%;
+}
+
+.CT_KhungChua {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.CT_Left {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.MuiCardActions-root8 {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+}
+
+.CT_Left_ImgMin {
+    width: 20%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.CT_Left_BtImg:focus {
+    border: 1px solid #f9b514;
+    opacity: 1;
+}
+
+.CT_Left_BtImg {
+    display: flex;
+    width: 100%;
+    height: 25%;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    border: none;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+}
+
+.CT_Left_ImgMax {
+    width: 100%;
+    text-align: center;
+}
+
+.CT_Left_BtImgMax {
+    height: 250px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.CT_Left_BtImgMax_2 {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width:767px) {
+
+    /* .DHCT_KhungDH {
+        width: auto !important;
+    } */
+    .CT_Left {
+        margin-top: 20px;
+        margin-left: 0px !important;
+        width: 100%;
+        flex-wrap: wrap-reverse;
+    }
+
+    .CT_Left_ImgMin {
+        display: flex;
+        flex-direction: row;
+        width: 100% !important;
+        margin-left: 7px;
+        justify-content: center;
+    }
+
+    .CT_Left_BtImg {
+        width: 25% !important;
+        height: 100% !important;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width:767px) {
+    .CTSP_Khung {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    .CT_KhungChua {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .CT_Right {
+        width: 100% !important;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .CT_h1 {
+        font-size: 1.7em;
+        /* word-break: break-all; */
+    }
+
+    .CT_mobile_title {
+        min-width: 100% !important;
+    }
+
+    .CT_soLuong {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.CT_Right {
+    width: 65%;
+    padding-right: 10px;
+}
+
+.CT_divtensp {
+    max-width: 100%;
+    display: flex;
+    padding-left: 15px;
+}
+
+@media (max-width:767px) {
+    .CT_divtensp {
+        display: flex;
+    }
+}
+
+.CT_h1 {
+    text-transform: capitalize;
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+    line-height: 1.2 !important;
+    width: 94%;
+}
+
+.CT_icon {
+    position: absolute;
+    right: 6%;
+}
+
+@media (max-width:767px) {
+    .CT_icon {
+        position: relative;
+        right: 0px;
+    }
+}
+
+.CT_bticon {
+    background-color: #919aa3;
+    color: #fff;
+    box-shadow: none !important;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    /* cursor: pointer; */
+    text-transform: unset;
+    border: 0;
+    margin: 0;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    display: inline-flex;
+    position: relative;
+}
+
+/* .CT_icon :hover {
+    background-color: #DFE3E8;
+    color: #f9b514;
+} */
+
+.CT_svg {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.CT_a {
+    display: flex;
+    font-size: 12px;
+    width: fit-content;
+    border: 1px solid #2b2b2b;
+    border-radius: 25px;
+    padding: 3px 7px;
+    margin: 5px 0;
+    color: #2b2b2b;
+    text-decoration: none;
+}
+
+.CT_svgthacmacsp {
+    padding-bottom: 2px;
+    font-size: 1.25rem;
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+.CT_p {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 2.5px;
+    padding-left: 5px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+}
+
+.CT_khunggia {
+    width: 100%;
+    height: 50px;
+    align-items: center;
+}
+
+.CT_giasp h3 {
+    text-decoration: none;
+    color: #00b46e;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.CT_KhungChiTiet {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+@media (max-width:767px) {
+    .CT_KhungChiTiet {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.CT_CTLeft {
+    width: 40%;
+}
+
+@media (max-width:767px) {
+    .CT_CTLeft {
+        width: 100%;
+    }
+}
+
+.CT_label {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.CT_CTa {
+    text-transform: capitalize !important;
+    color: #00b46e !important;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.CT_divtable {
+    width: 95%;
+    margin-top: 8px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.CT_table {
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.CT_thead {
+    display: table-header-group;
+}
+
+.CT_tr {
+    color: inherit;
+    display: table-row;
+    outline: 0;
+    vertical-align: middle;
+}
+
+.CT_th {
+    background-color: transparent;
+    border: 0.1px solid rgba(209, 207, 207, 0.87);
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 600;
+    line-height: 1rem;
+    vertical-align: inherit;
+    display: table-cell;
+    font-size: 0.875rem;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+
+.CT_th_a {
+    text-transform: capitalize !important;
+    color: #00b46e !important;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 16px !important;
+    cursor: pointer;
+}
+
+.CT_CTRight {
+    width: 100%;
+}
+
+.CT_DanhMucNgang {
+    max-width: 100%;
+    display: flex;
+    min-height: 50px;
+}
+
+.CT_DM_center {
+    margin-bottom: 0px;
+    flex: 1 1 auto;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+}
+
+.CT_DM_CT_button {
+    opacity: 1;
+    min-height: 48px;
+    text-align: center;
+    flex-shrink: 0;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+    line-height: 1.75;
+    white-space: normal;
+    text-transform: uppercase;
+    padding-right: 12px;
+    overflow: hidden;
+    position: relative;
+    font-size: 0.9rem;
+    max-width: 264px;
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    align-items: center;
+    border-radius: 0;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.CT_DM_CT_span {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CT_DM_CT_spandiv {
+    left: 0px;
+    width: 148.222px;
+    background-color: #f9b514;
+    bottom: 0;
+    position: absolute;
+    height: 5px;
+}
+
+.CT_DM_Right {
+    width: 40px;
+    opacity: 0.8;
+    flex-shrink: 0;
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* QuanLy */
+
+.QL_divDN {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.QL_divDN h3 {
+    padding: 0;
+    margin-block-end: 0.5rem;
+}
+
+.QL_bntDN {
+    margin: auto;
+    width: 30%;
+    font-size: 1rem;
+    background: linear-gradient(102.04deg, rgb(0, 180, 110) 0%, rgb(154, 193, 0) 100%) !important;
+    color: white;
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 20px;
+    border-radius: 50px !important;
+}
+
+.search_chitiet_desktop .sc-ifAKCX .wrapper .sc-bwzfXH {
+    overflow: auto;
+    height: 300px;
+}
+
+@media (max-width:425px) {
+    .search_chitiet_desktop .sc-ifAKCX .wrapper .sc-bwzfXH {
+        position: absolute !important;
+        top: 45px !important;
+        left: -40px !important;
+        width: 133% !important;
+        background-color: white;
+        height: 250px !important;
+    }
+}
+
+.dtl_bodykhung {
+    background-color: rgb(244, 247, 252);
+    margin: auto;
+    width: 100%;
+    line-height: 1.43;
+    font-weight: 400;
+}
+
+.dtl_khungchua {
+    width: 95%;
+    margin: auto;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.dtl_title {
+    display: flex;
+    justify-content: center;
+    color: #00b46e;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.dtl_text {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.dtl_textTTDH {
+    width: 100%;
+    font-weight: 400;
+    font-size: 13pt;
+}
+
+.dtl_button {
+    align-self: center;
+    font-family: Roboto, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 12px;
+    color: #00b46e;
+    font-weight: 600 !important;
+    cursor: pointer;
+}
+
+.dtl_khungdialog {
+    width: 48%;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.dtl_a {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    background-color: white;
+    border-radius: 15px;
+    border: 0.5px solid gray;
+    box-shadow: 1px 3px 1px #9E9E9E;
+}
+
+.dtl_adtl {
+    background-color: white;
+    border-radius: 7px;
+    border: 0.5px solid gray;
+    margin: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.dtl_adtldiv {
+    background-color: white;
+    border-radius: 15px;
+    border: 0.5px solid gray;
+    box-shadow: 1px 3px 1px #9E9E9E;
+    margin: 5px;
+    text-align: center;
+    padding: 3px;
+    padding-right: 5px;
+}
+
+.khunglog {
+    width: 100%;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.khunglogdtl {
+    width: 100%;
+    align-items: center;
+    padding: 5px;
+}
+
+.log_gia {
+    color: rgb(0, 171, 85);
+    font-size: 20pt;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+}
+
+.log_diem {
+    color: rgb(255, 193, 7);
+    font-size: 20pt;
+    border-top: black;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.log_diemdtl {
+    color: rgb(255, 193, 7);
+    font-size: 20pt;
+    border-top: black;
+    display: flex;
+}
+
+
+.dtl_Cancel {
+    padding: 6px 16px;
+    background-color: rgb(255, 193, 7) !important;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    margin: 15px;
+    font-weight: bold !important;
+}
+
+.dtl_Yes {
+    padding: 6px 16px;
+    background-color: rgb(0, 171, 85) !important;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    margin: 15px;
+    width: 100px;
+    font-weight: bold !important;
+}
+
+.dtl_dialog {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bt_submitdtl {
+    background-color: #00CD00;
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    color: #F8F8FF;
+}
+
+.dtl_bt {
+    width: 40%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.diem {
+    color: rgb(255, 193, 7);
+    font-size: 10pt;
+}
+
+.gia {
+    color: rgb(0, 171, 85);
+    font-size: 11pt;
+}
+
+.icon {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: none;
+}
+
+@media (max-width:450px) {
+    .dtl_bt {
+        width: 100%;
+    }
+
+    .dtl_textTTDH {
+        width: 100%;
+        font-weight: 400;
+        font-size: 12pt;
+        display: inline-flex;
+    }
+
+    .abcDTL {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .khunglogdtl {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon {
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline;
+    }
+
+    .dtl_khungdialogdtl {
+        display: flex;
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .dtl_khungdialogdtla {
+        display: flex;
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .dtl_adtl {
+        background-color: white;
+        border-radius: 7px;
+        margin: 5px;
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:1200px) {
+    .dtl_textTTDH {
+        width: 100%;
+        font-weight: 400;
+        font-size: 14pt;
+        display: inline;
+    }
+}
+
+.div_diemthuong {
+    width: 50%;
+}
+
+.dtl_button {
+    align-self: center;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 14px;
+    color: #00b46e;
+    font-weight: 600 !important;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.abcDTL {
+    display: flex;
+    flex-direction: row;
+}
+
+.abcttdh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dtl_khungdialogdtl {
+    width: 26%;
+    margin-right: 5px;
+}
+
+.dtl_khungdialogdtla {
+    margin-right: 5px;
+}

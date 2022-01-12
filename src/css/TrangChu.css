@@ -1,0 +1,644 @@
+@media(min-width: 1920px) {
+  .sanpham_trangchu_parent {
+    max-width:300px !important;
+    width: 100% !important;
+  }
+  .sanpham_trangchu_parent:first-child{
+    margin-left: 30px;
+  }
+}
+
+/* @media(max-width: 1599px) {
+  .sanpham_trangchu_parent {
+    max-width: 215px !important;
+    width: 215px !important;
+  }
+} */
+
+@media(max-width: 1400px) {
+  .sanpham_trangchu_parent {
+    max-width: 255px !important;
+    width: 255px !important;
+  }
+}
+
+@media(max-width: 1200px) {
+  .sanpham_trangchu_parent {
+    max-width: 200px !important;
+    width: 200px !important;
+  }
+}
+
+@media(max-width: 1326px) {
+  .sanpham_trangchu_parent {
+    max-width: 250px !important;
+    width: 250px !important;
+  }
+}
+@media(max-width: 1024px) {
+  .sanpham_trangchu_parent {
+    max-width: 220px !important;
+    width: 220px !important;
+  }
+}
+@media(max-width: 900px) {
+  .sanpham_trangchu_parent {
+    max-width: 200px !important;
+    width: 200px !important;
+  }
+}
+@media(max-width: 1024px) {
+  .sanpham_trangchu_parent {
+    max-width: 220px !important;
+    width: 220px !important;
+  }
+  .danhgia_parent {
+    margin-bottom: 50px;
+    height: 350px !important;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .thongtin_danhgia {
+    margin-top: 5px !important;
+  }
+  .danhgia_drugstore, .danhgia_comment {
+    font-size: 14px !important;
+  }
+  .danhgia_drugstore, .danhgia_name {
+    text-align: center;
+  }
+}
+
+@media(max-width: 1600px) {
+  .image-gallery-slide {
+    height: 450px !important;
+
+  }
+}
+@media(max-width: 1520px) {
+  .image-gallery-slide {
+    height: 400px !important;
+  }
+}
+@media(max-width: 1280px) {
+  .image-gallery-slide {
+    height: 350px !important;
+  }
+}
+@media(max-width: 900px) {
+  .image-gallery-slide {
+    height: 300px !important;
+  }
+}
+@media(max-width: 700px) {
+  .image-gallery-slide {
+    height: 250px !important;
+  }
+}
+@media(max-width: 500px) {
+  .image-gallery-slide {
+    height: 200px !important;
+  }
+}
+
+@media(max-width: 768px) {
+  .image-gallery-icon, .image-gallery-bullets {
+    z-index: 0 !important;
+    display: none;
+  }
+  .image-gallery-slide {
+    height: 300px !important;
+  }
+  .sanpham_trangchu_parent {
+    max-width: 200px !important;
+    width: 200px !important;
+  }
+  .hinh_sp {
+    margin: 0 auto;
+  }
+  /* .search_trangchu_mobile1 {
+    width: 67% !important;
+    height: 80px;
+    position: absolute;
+    top: 10px;
+    left: 25%;
+} */
+  .search_trangchu_mobile1 {
+    width: 73% !important;
+    /* height: 34px !important; */
+    position: fixed !important;
+    top: 3px !important;
+    left: 45px !important;
+    z-index: 202 !important;
+  }
+  .search_trangchu_mobile1 .sc-ifAKCX .wrapper {
+    height: 40px !important;
+    border-radius: 5px !important;
+  }
+  #autocomplete_trangchu {
+    margin-left: 15px;
+  }
+  .search_trangchu_mobile {
+    position: absolute;
+    top: 43px !important;
+    left: 2% !important;
+  }
+  .header_mobile_trangchu {
+    display: block !important;
+  }
+  .header_logo_trangchu {
+    position: fixed;
+    top: 10px;
+    left: 40%;
+    z-index: 999;
+  }
+}
+
+@media(max-width: 515px) {
+  .image-gallery-slide {
+    height: 150px !important;
+  }
+  .sanpham_trangchu_parent {
+    max-width: 270px !important;
+    width: 270px !important;
+  }
+  .slider_banner_trangchu {
+    margin-top: 40px !important;
+  }
+  .header_user_logo_trangchu {
+    position: absolute;
+    bottom: 3px !important;
+    right: -1px;
+  }
+  .header_logo_trangchu {
+    position: fixed;
+    top: 10px;
+    left: 25%;
+    z-index: 999;
+  }
+  /* #autocomplete_trangchu{
+    padding-left: 5px  !important;
+    padding-right: 5px !important;
+  } */
+}
+
+@media(max-width: 320px) {
+  .sanpham_trangchu_parent {
+    max-width: 290px !important;
+    width: 290px !important;
+  }
+}
+
+.header_mobile_trangchu {
+  display: none;
+}
+
+.image-gallery-slide {
+  height: 400px;
+  width: 100%;
+  /* background-color: red; */
+  margin: 0 auto;
+
+}
+
+.image-gallery-slide img{
+  margin: 0 auto;
+  object-fit: contain;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 400px;
+}
+
+.sanpham_trangchu_parent:hover {
+  box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.08);
+}
+
+.sanpham_trangchu_parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: inherit;
+  max-width: 300px !important;
+  width: 300px !important;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  /* border: 1px solid rgba(0, 0, 0, .125); */
+  border-radius: 10px;
+  height: 100%;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  margin: 5px;
+  zoom: 80%;
+}
+
+.doitac_par_trangchu {
+  margin: 0px 20px 0px 20px;
+}
+
+.margin_logo {
+  width: 100% !important;
+}
+
+.logo_doitac {
+  width: 90% !important;
+  background: white;
+  color: #fff;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.slider_danhgia {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.danhgia_parent {
+  background: white;
+  color: #fff;
+  margin: 10px;
+  height: 210px;
+  display: flex;
+  box-shadow: 0 5px 15px -7px #777;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.avatar_danhgia {
+  width: 85px;
+  height: 85px;
+  border-radius: 50px;
+  background-color: white;
+  background-size: cover;
+  margin: 15px;
+}
+
+.slick-slider {
+  margin: 30px auto 25px;
+}
+
+@media (max-width: 768px) {
+  .test {
+    font-size: 24px;
+  }
+  /* .center {
+      margin-left: -40px;
+      margin-right: -40px;
+    } */
+  .center .slick-center h3 {
+    color: #e67e22;
+    opacity: 1;
+    transform: scale(1);
+  }
+  .center h3 {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: all 300ms ease;
+  }
+  .slick-slide {
+    /* margin-left: 10px !important; */
+  }
+}
+
+.slick-prev {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  background-color: black;
+  opacity: .5;
+  color: transparent;
+  text-align: center;
+  font-size: 8px;
+  border: none;
+  z-index: 1;
+  border-radius: 50px;
+  background-image: url('../images/next_slider.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55% 55%;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.slick-next {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: black;
+  opacity: .5;
+  color: transparent;
+  text-align: center;
+  font-size: 8px;
+  border: none;
+  z-index: 1;
+  border-radius: 50px;
+  background-image: url('../images/next_slider.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-size: 55% 55%;
+}
+
+@media (max-width: 768px) {
+  .section_title_sp_trangchu {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    margin-left: 0px !important;
+  }
+  /* .hinh_sp_trangchu {
+    height: 110px !important;
+    width: 100% !important;
+  } */
+  .title_trangchu_mobile {
+    font-size: 18px !important;
+  }
+}
+
+.baongoai_sp4 {
+  flex-wrap: wrap;
+  height: auto;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.ten_sp_trangchu {
+  display: flex;
+  width: 95%;
+  height: 50px;
+  align-items: center;
+}
+
+.hinh_sp_trangchu {
+  width: 180px;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  height: 160px;
+  margin: 0 auto;
+}
+
+.tongcls_trangchu {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.khuyenmai_title {
+  padding-top: 10px;
+  color: white !important;
+}
+
+.flashsale_title {
+  padding-top: 10px;
+  color: green !important;
+}
+
+.khuyenmai_trangchu {
+  background-image: linear-gradient( 90deg, rgb(9, 138, 9), #137e8f);
+}
+
+.title_sp_trangchu {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 500;
+  color: green;
+}
+
+.parent_btn_tatca {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_tatca {
+  background-image: linear-gradient( 90deg, rgb(9, 138, 9), #648f13);
+  width: 200px;
+  border: none;
+  padding: 15px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn_khuyenmai_trangchu:hover {
+  background-color: white;
+  color: black !important;
+  transition: 0.5s;
+}
+
+.btn_khuyenmai_trangchu {
+  background-image: none !important;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.slider_trangchu {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.trangchu_infor {
+  display: block !important;
+  height: 40px !important;
+}
+
+.trangchu_header_infor {
+  padding: 10px !important;
+}
+
+.search_trangchu_mobile {
+  width: 55%;
+  height: 80px;
+  position: absolute;
+  top: 10px;
+  left: 25%;
+}
+
+.search_chitiet_desktop {
+  width: 55%;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  left: 25%;
+}
+
+@media (max-width: 800px) {
+  .search_chitiet_desktop {
+    width: 76% !important;
+    height: 50px !important;
+    position: fixed !important;
+    top: -8px !important;
+    left: 50px !important;
+    z-index: 202 !important;
+  }
+  .search_chitiet_desktop .MuiFormControl-marginNormal {
+    margin-top: 14px !important;
+  }
+}
+
+.search_trangchu_mobile1 {
+  width: 55%;
+  height: 60px;
+  position: absolute;
+  top: 25px;
+  left: 23%;
+}
+
+#autocomplete_trangchu:hover {
+  border: 2px solid #027525;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#autocomplete_trangchu:focus {
+  border: 2px solid #027525 !important;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  width: 150% !important;
+}
+
+#autocomplete_trangchu {
+  width: 50%;
+  height: 31px;
+  background-color: white;
+  padding-left: 45px;
+  padding-right: 45px;
+  /* padding: 12px; */
+  border-radius: 30px;
+  border: 1px solid lightgray;
+  text-overflow: ellipsis;
+  z-index: 0;
+}
+
+@media( max-width:768px) {
+  .danhgia_parent {
+    margin-bottom: 50px;
+    height: 320px !important;
+    justify-content: center;
+    padding-bottom: 10px;
+  }
+  .thongtin_danhgia {
+    margin-top: 5px !important;
+  }
+  .danhgia_drugstore, .danhgia_comment {
+    font-size: 14px !important;
+  }
+  .danhgia_drugstore, .danhgia_name {
+    text-align: center;
+  }
+}
+
+.thongtin_danhgia {
+  width: 80%;
+  margin-top: 15px;
+}
+
+.danhgia_name {
+  font-weight: 700 !important;
+  font-size: 20px;
+  color: green;
+}
+
+.danhgia_drugstore {
+  font-size: 16px;
+  color: #919aa3;
+}
+
+.danhgia_comment {
+  word-wrap: break-word;
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.54);
+  margin-top: 10px;
+}
+
+.icon_comment {
+  font-size: 16px !important;
+  color: green;
+  opacity: .4;
+}
+
+.icon_comment_rotate {
+  transform: rotate(180deg);
+}
+
+.item_search_parent_trangchu {
+  width: 750px;
+  display: flex;
+  align-items: center;
+}
+
+.item_search_parent_trangchu .item_search_image {
+  align-items: center;
+}
+
+.item_search_parent_trangchu .item_search_name {
+  width: 65%;
+  white-space: normal;
+  margin-left: 5px;
+}
+
+.item_search_parent_trangchu .item_search_price {
+  margin-left: 5px;
+}
+
+.search_trangchu_mobile1 .sc-ifAKCX .wrapper .sc-bwzfXH {
+  overflow: auto;
+  height: 300px;
+}
+@media (max-width:769px) {
+  .search_trangchu_mobile1 .sc-ifAKCX .wrapper .sc-bwzfXH {
+    position: absolute !important;
+    top: 45px !important;
+    left: -40px !important;
+    width: 133% !important;
+    background-color: white;
+    height: 250px !important;
+  }
+  .item_search_parent_trangchu {
+    width: 90vw !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .item_search_parent_trangchu {
+    width: 550px !important;
+  }
+}
+
+@media (min-width:1200px) {
+  .item_search_parent_trangchu {
+    width: 750px !important;
+  }
+}
+
+@media (min-width:1300px) {
+  .item_search_parent_trangchu {
+    width: 850px !important;
+  }
+}
+
+@media (min-width:1500px) {
+  .item_search_parent_trangchu {
+    width: 950px !important;
+  }
+}
+
+@media (min-width:1600px) {
+  .item_search_parent_trangchu {
+    width: 1280px !important;
+  }
+}

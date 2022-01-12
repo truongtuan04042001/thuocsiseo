@@ -1,0 +1,265 @@
+/* 
+.tong-ts{
+    background-color: rgb(209, 250, 215);
+}
+.SECTION512{
+    width: 100%;
+    display: flex;
+}
+.ThuocsiSeller{
+    
+    margin: 0 auto;
+    background-color: rgb(31, 171, 90);
+    border-radius: 20px;
+    padding: 7px 10px 7px 10px;
+
+}
+.phai-ts{
+    width: 40%;
+    display: flex;
+    margin-top: 10px;
+    
+}
+.ladi-headline{
+    width: 100%;
+    text-align: right;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+.trai-ts{
+    width: 50%;
+    text-align: right;
+    display: flex;
+}
+@media (max-width:700px) {
+    .trai-ts{
+        display: none;
+    }
+    .SECTION512 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .phai-ts {
+        width: 100%;
+       flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .ThuocsiSeller {
+        margin-top: 10px;
+    }
+    .slider_ts {
+        text-align: center;
+        margin: 0 auto;
+        width: 100% !important;
+        height: auto !important;
+        border: none;
+    }
+    .gioithieu {
+        flex-wrap: wrap !important;
+        width: 90% !important;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+    }
+    .gioithieu1 {
+        width: 50% !important;
+
+    }
+    .anh-tuvan {
+        width: 90% !important;
+        flex-wrap: wrap !important;
+
+       
+    }
+    .anh-tuvan1 {
+        width: 90% !important;
+        flex-wrap: wrap !important;
+
+    }
+    .anh-tuvan6 {
+        margin-top: 10px !important;
+    }
+    .anhtrongsuot {
+        display: none;
+    }
+    .dki-ts {
+        
+        width: 60% !important;
+        text-align: center !important;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+    }
+}
+.header_logo{
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.image-background{
+    width: 100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 20px;
+}
+.anh-ts{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gioithieu{
+    display: flex;
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.gioithieu1{
+    width: 19%;
+    border-radius: 15px;
+
+    margin: 0 auto;
+    color: white;
+    flex-wrap: wrap;
+}
+.anhgthieu{
+    width: 95%;
+    height: auto ;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding-top: 5px;
+
+}
+.botron{
+    border-radius: 15px;
+}
+.tuvan{
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.anh-tuvan{
+    width: 40%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+.anh-tuvan1{
+    width: 62%;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.a_tuvan{
+    width: 270px;
+    height: auto    ;
+    margin: 0 auto;
+
+}
+.a_tuvan3{
+    width: 270px;
+    height: auto    ;
+    margin: 0 auto;
+}
+.a_tuvan2{
+    width: 200px;
+    height: auto    ;
+    margin: 0 auto;
+}
+.a_tuvan4{
+    width: 200px;
+    height: auto    ;
+    margin: 0 auto;
+}
+.slider_ts{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    height: 510px;
+    border: none;
+}
+
+
+.dki-ts{
+    background-color: rgb(16, 145, 33);
+    width: 25%;
+    height: 390px;
+    border-radius: 15px;
+
+}
+.anhtrongsuot{
+    width: 60%;
+    margin-top: -130px;
+}
+.dangki-ts{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inputnhap{
+    width: 90%;
+    font-size: 13px;
+    background-color: white;
+    padding: 10px 0px 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.dangkingay-ts{
+    background: linear-gradient(206deg, #C3DA3A, #40AA39);
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+  color: #fff;
+  padding: 10px 0 10px 0;
+  margin-top: 20px;
+}
+.chu-ts{
+    text-align: center;
+    align-self: center;
+    margin: 0 auto;
+}
+.ladi-headline3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+.ladi-headline1{
+    color: white;
+}
+.anh-ts :hover{
+    transform: scale(1.1);
+}
+.gioithieu1 :hover{
+    transform: scale(1.05);
+}
+.anh-tuvan6:hover{
+    transform: scale(1.05);
+}
+.anh-tuvan6{
+    width: 100%;
+    text-align: center;
+    margin: o auto;
+} */

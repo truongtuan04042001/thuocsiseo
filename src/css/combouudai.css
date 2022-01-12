@@ -1,0 +1,273 @@
+body {
+    /* font-family: 'Perpetua'; */
+    -webkit-font-smoothing: antialiased;
+    background-color: #f4f7fc;
+}
+
+.combosp{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.listcombosp{
+    width: 30%;
+    border-radius: 10px;
+    border:1px solid gray ;
+    box-shadow: 3px 3px 9px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.article {
+    width: 15.5%;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    vertical-align:top;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 9px rgb(0 0 0 / 8%);
+    cursor: pointer;
+}
+
+.thumb {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} 
+.thumb6 {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} 
+.thumb7 {
+    height: 36px !important;
+
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+} 
+.overfl{
+    width:100%;
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+     display: -webkit-box;
+     text-align: left;
+}
+.tencombosp{
+    color: black;
+    font-weight: bold;
+    margin: 7px;
+    height: 40px;
+}
+img{
+    object-fit: contain;
+}
+.soluong_spcb {
+    display: flex;
+    height: auto;
+    zoom: 80%;
+}
+.tangthem{
+    color: red;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 16px;
+}
+.tsl{
+    margin: 0 auto;
+    display: flex;
+}
+.Giacombo{
+    color: #00b46e;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    margin: 7px;
+}
+.giamsl{
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.article:hover{
+    box-shadow: 3px 3px 9px rgb(0 0 0 / 8%);
+    transform: scale(1.05);
+    cursor: pointer; 
+}
+.overfl:hover{
+    color: #00b46e;
+
+}
+
+
+.thumb1 {
+    width: 100%;
+    height: 450px;
+    background-color: #fff;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+} 
+.daily{
+    padding: 10px;
+    justify-content: center;
+}
+.btndkdaily {
+    padding: 15px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+.chanchan{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.cangiua{
+
+    text-align: center;
+
+    line-height: 350px;
+}
+
+div.thongtindk {
+    background: url("https://api.thuocsionline.vn/uploads_Images/888590896.jpg");
+    height: 350px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: contain;
+    margin: 0 auto;
+}
+@media (max-width: 1162px)
+{
+    .article{
+        width: 23%;
+    }
+}
+@media (max-width: 899px)
+{
+    .article{
+        width: 25%;
+    }
+}
+@media (max-width: 880px)
+{
+    .article{
+        width: 30%;
+    }
+}
+@media (max-width: 680px)
+{
+    .article{
+        width: 47%;
+    }
+}
+@media (max-width: 1000px){
+
+    .thumb{
+        width: 150px;
+        height: 130px;
+    }
+}
+.btndkdaily:hover{
+    box-shadow: 0 0 10px 4px #888888;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box;
+}
+.copyright {
+    position: absolute;
+    bottom: 0;
+  }
+  .copyright a {
+    text-decoration: none;
+    color: #16a085;
+  }
+  .copyright a:hover {
+    text-decoration: underline;
+  }
+  
+  .dkDL {
+    position: relative;
+    padding: 1em 1.5em;
+    border: 5px;
+    background-color: #009900;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    margin: 1em 0.8em;
+    font-weight: bold;
+    opacity: 80%;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+  }
+  .dkDL:hover{
+    box-shadow:0 0 10px 2px #e0d7d7;
+  }
+  .dkDL.type1 {
+    color: #fff;
+  }
+  .dkDL.type1.type1::after, .dkDL.type1.type1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 3px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+  }
+  .dkDL.type1.type1::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+  }
+  .dkDL.type1.type1::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #fff;
+    border-left-color: #fff;
+  }
+  .dkDL.type1.type1:hover:after, .dkDL.type1.type1:hover:before {
+    width: 100%;
+    height: 100%;
+  }

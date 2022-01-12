@@ -1,0 +1,40 @@
+@media ( max-width: 340px) {
+  iframe {
+    width: 100%;
+  }
+}
+
+.footer {
+  background-color: #009900;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  align-items: center;
+}
+
+.col_iner {
+  align-items: center;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+}
+
+.lienket {
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ifamefb {
+  align-items: center;
+  margin: 0 auto;
+  align-self: center;
+  text-align: center;
+}
+
+h5:hover {
+  color: #a9b427;
+}

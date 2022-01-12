@@ -1,0 +1,1186 @@
+@media (max-width: 1100px) {
+
+  .o-ben-phai,
+  .thong-ke-parent,
+  .query-parent,
+  .query-child {
+    width: 99% !important;
+  }
+}
+
+.thong-ke-parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container-options {
+  width: 300px;
+  height: 570px;
+  padding: 5px;
+  border: 1px solid lightgray;
+  margin: 5px;
+  overflow: auto;
+  /* display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; */
+}
+
+.o-ben-phai {
+  width: 73.7%;
+  padding: 5px;
+}
+
+.container-table {
+  margin-top: 25px;
+}
+
+/* td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+} */
+
+/* th {
+  background-color: rgb(226, 224, 224);
+  border: 1px solid #757373;
+  text-align: center;
+  position: sticky;
+  top: 0
+} */
+
+#input_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#select {
+  width: 20%;
+  margin: 20px;
+  text-align: center;
+}
+
+#select1 {
+  width: 100%;
+  margin: 20px;
+  margin-left: 0px;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+
+#controllable-states-demo {
+  width: 100%;
+}
+
+.btnExcel {
+  cursor: pointer;
+  margin: 3px;
+  color: white;
+  background-color: #fdbe07;
+  border: none;
+  padding: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+}
+
+.btnExcel:hover {
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.btnChucNang {
+  width: 96%;
+  height: 10%;
+  cursor: pointer;
+  color: black;
+  background-color: transparent;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.btnChucNang:hover {
+  color: red;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 5px 8px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.box {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+
+#btn-query {
+  color: white;
+  background-color: rgb(6, 173, 6);
+  /* border: none; */
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 8px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.input-text1222 {
+  height: 40px;
+  border: 0.5px solid #ccc;
+  padding: 5px 0px 5px 20px;
+  border-radius: 5px;
+}
+.input-text121 {
+  height: 40px;
+  width: 100%;
+  font-size: 13px;
+  background-color: white;
+  padding: 5px 0px 5px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.MGG_divcontent1 {
+  width: 70%;
+  margin: auto;
+  background-color: rgb(244, 247, 252);
+  min-height: 80vh;
+  zoom: 83%;
+}
+@media (max-width: 1000px) {
+  .MGG_divcontent1 {
+    width: 100%;
+  
+  }
+}
+.tongmoldal {
+  width: 54%;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  background: white;
+  margin: 0 auto;
+}
+
+.phantrang111 {
+  margin-top: 35px;
+}
+
+.TK2_btnleft121 {
+  width: 100%;
+  /* height: 63px; */
+  overflow: hidden;
+  background-color: transparent;
+  border: #fff;
+  cursor: pointer;
+  text-align: left;
+  color: white;
+  padding: 10px 5px 10px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.btn-thongke12 {
+  /* width: 133px; */
+  height: 40px;
+  cursor: pointer;
+  margin: 3px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.aab {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: 2;
+  background: white;
+  margin: 0 auto;
+}
+
+.jss183 {
+  width: 80% !important;
+  margin: 0;
+}
+
+.jss177 {
+  width: 20% !important;
+}
+
+.jss176 {
+  margin: 0 auto !important;
+}
+
+.MuiFormControl-marginNormal {
+  /* margin-top: 10px !important; */
+  margin-bottom: 8px;
+}
+
+.img_search3 {
+  position: absolute;
+  left: 15px;
+  top: 51%;
+  z-index: 1;
+}
+
+.moldal-index {
+  z-index: 999;
+}
+
+.search-product-parent_thongke {
+  width: 80%;
+  height: 65px;
+  margin-left: 10%;
+  margin-bottom: 5px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  align-items: flex-end;
+  padding-top: 10px;
+}
+
+
+.phanchia1234 {
+  width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 4%;
+  margin: 0 auto;
+}
+
+.reset_time_tk {
+  background-color: lightgreen;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-weight: 500 !important;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.reset_time_tk img {
+  margin-right: 5px;
+}
+
+.reset_time_tk:hover {
+  background-color: rgb(118, 199, 118);
+}
+
+/* .MuiAutocomplete-root.MuiAutocomplete-hasClearIcon {
+  width: 60%;
+} */
+
+.btn-thongke {
+  cursor: pointer;
+  margin: 3px;
+  color: white;
+  background-image: -webkit-linear-gradient(347.96deg, #00b46e, #9ac100);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.img_search_thongke {
+  position: absolute;
+  left: 15px;
+  top: 28px;
+  z-index: 1;
+}
+
+.aabb {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+
+}
+
+.hoversubmit {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(253, 190, 7);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.btn-thongke1 {
+  width: 75px;
+  height: 40px;
+  cursor: pointer;
+  margin: 3px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.btn-thongke1 :hover {
+  opacity: 0.9;
+  color: #757373;
+}
+.btn-thongke1TK {
+  cursor: pointer;
+  margin: 3px;
+  padding:13px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+.boderinhoadon{
+  border: 1px solid;
+}
+.btn-thongke1TK :hover {
+  opacity: 0.9;
+  color: #757373;
+}
+
+.csss {
+  color: red;
+}
+
+.hoversubmit :hover {
+  color: #00b46e !important;
+  background-color: #00b46e;
+  opacity: 0.9;
+}
+
+.phantrang5 {
+  /* position: sticky; */
+  background: #fff;
+  /* top: 0.5em; */
+  z-index: 1;
+  /* height: 50px; */
+  position: sticky;
+  top: 46px;
+}
+
+.position {
+  position: sticky;
+  top: 0em;
+  z-index: 400
+}
+
+
+
+.dialog_choose_time .date_picker_year .react-datepicker {
+  margin: 10px 0px;
+}
+
+.dialog_choose_time .date_picker_year .react-datepicker {
+  border: none;
+  text-align: center;
+  width: 200px;
+}
+
+.dialog_choose_time .date_picker_year .react-datepicker .react-datepicker__year .react-datepicker__year-wrapper .react-datepicker__year-text {
+  padding: 5px;
+}
+
+.dialog_choose_time .date_picker_year .react-datepicker .react-datepicker__year .react-datepicker__year-wrapper {
+  display: block;
+}
+
+.dialog_choose_time .date_picker_year .react-datepicker .react-datepicker__header {
+  background-color: transparent;
+}
+
+.react-datepicker__month .react-datepicker__month-text,
+.react-datepicker__month .react-datepicker__quarter-text {
+
+  padding: 5px 10px;
+}
+
+.dialog_choose_time .date_picker_year .react-datepicker .react-datepicker__month-container .react-datepicker__month .react-datepicker__quarter-wrapper .react-datepicker__month--selected,
+.react-datepicker__month--in-selecting-range,
+.react-datepicker__month--in-range,
+.react-datepicker__quarter--selected,
+.react-datepicker__quarter--in-selecting-range,
+.react-datepicker__quarter--in-range {
+  background-color: lightgreen !important;
+}
+
+span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1 {
+  color: #197420 !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked+.MuiSwitch-track {
+  background-color: #fff !important;
+}
+
+.MuiSwitch-track {
+  width: 100%;
+  height: 100%;
+  opacity: 0.38;
+  z-index: -1;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 7px;
+  background-color: #fff !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: #a9b427 !important;
+}
+
+.borderleft {
+  border-left: 3px solid #ececec;
+}
+
+.borderleft1 {
+  border-right: 3px solid #ececec;
+}
+.tam-tinh3 {
+  width: 17%;
+  text-align: left;
+  float: right;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-left: 1.5px solid #ececec;
+  
+}
+.tam-tinhsuadon1 {
+  width: 5%;
+  text-align: right;
+  float: right;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-left: 1.5px solid #ececec;
+  
+}
+.tam-tinhsuadon2{
+  width: 13%;
+  text-align: right;
+  float: right;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-left: 1.5px solid #ececec;
+}
+.tam-tinhsuadon3{
+  width: 20%;
+  text-align: justify;
+  float: right;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-left: 1.5px solid #ececec;
+
+}
+.tam-tinhsuadon4 {
+  width: 7%;
+  text-align: justify;
+  float: right;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-left: 1.5px solid #ececec;
+}
+.tam-tinhsuadon5 {
+  width: 3%;
+  text-align: right;
+  float: right;
+  flex-wrap: wrap;
+  padding: 5px;
+  border-left: 1.5px solid #ececec;
+}
+.phanchia123 {
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 4%;
+}
+.chiadoi212 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  height: 100%;
+}
+.order_review212 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.hove-xoa :hover{
+  background-color: #f7cfd4;
+}
+.nut-inport{
+  margin: 8px;
+  background-color: #fdbe07;
+  border-radius: 5px;
+}
+.neolai {
+  position: sticky;
+  top: 0.5em;
+  z-index: 999;
+}
+.neolai_con{
+  width: 100%;
+  overflow: auto;
+}
+.input-text1 {
+  height: 50px;
+  width: 100%;
+  font-size: 13px;
+  background-color: white;
+  padding: 10px 0px 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.ten {
+  width: 100%;
+  height: auto;
+  background-color: #a9b427;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+  flex-wrap: wrap;
+  padding: 5px 0px 5px;
+}
+
+.tong-traii {
+  /* width: 00px; */
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.tong_trai_thongke_an {}
+
+.tong_trai_thongke {
+  /* width: 20vh; */
+  height: 118vh;
+  text-align: center;
+  background-color: #197420;
+  animation-name: example;
+  animation-duration: 1s;
+  /* position: relative; */
+  z-index: 999;
+}
+
+/* @keyframes example {
+  from {left: -200px;}
+  to {left: 0px;}
+} */
+.date_picker_thongke_par {
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.title_time_thongke {
+  font-weight: 500 !important;
+  padding-top: 10px;
+  font-size: 1.0em;
+
+}
+
+.option_fixed {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1.0em;
+  text-align: start;
+  display: flex;
+  margin: 10px auto;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.closeModal_time_thongke {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: right;
+}
+
+.dialog_time_parent {
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  padding: 15px;
+  box-shadow: 5px 5px 15px -7px #777;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog_time_fixed {
+  background-color: transparent;
+  display: flex;
+}
+
+.dialog_time {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}
+
+.col_time {
+  width: 10vw;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.btn_time:hover {
+  text-decoration: underline;
+}
+
+.btn_title {
+  font-weight: 500 !important;
+  margin-bottom: 10px;
+  font-size: 1.4vw;
+}
+
+.btn_time {
+  background-color: transparent;
+  color: #00b46e;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2vw;
+  margin: 10px;
+}
+
+/* .square_time_fixed_thongke {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  position: absolute;
+  top: 25%;
+  left: -5px;
+  z-index: -1;
+  transform: rotate(45deg);
+} */
+.square_time_fixed_thongke {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  position: absolute;
+  bottom: 25%;
+  top: -5px;
+  z-index: -1;
+  transform: rotate(
+45deg);
+}
+.square_time_thongke {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  position: absolute;
+  /* top: 35%; */
+  top: -5px;
+  z-index: -1;
+  transform: rotate(
+45deg);
+}
+.btn_time_custom:hover {
+  text-decoration: underline;
+}
+
+.btn_time_custom {
+  background-color: transparent;
+  color: #00b46e;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2vw;
+  margin: 10px;
+}
+
+.dialog_choose_time {
+  /* width: 200px;
+  height: 200px; */
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 101%;
+  z-index: 1000;
+  display: flex;
+  padding: 15px;
+  box-shadow: 5px 5px 15px -7px #777;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.postition_time_donhang{
+  position: absolute;
+  top: 0;
+  left: 30%;
+  z-index: 999;
+  background-color: white;
+  padding: 10px;
+}
+.date_picker_range {
+  display: flex;
+}
+
+.dialog_choose_time>.date_picker_range>.react-datepicker-wrapper>.react-datepicker__input-container>input {
+  border: none;
+}
+
+.to_date_choose {
+  margin-left: 10px;
+}
+
+.next_month_tk :hover,
+.prev_month_tk:hover {
+  background-color: rgb(233, 230, 230);
+}
+
+.next_month_tk,
+.prev_month_tk {
+  cursor: pointer;
+  margin: 5px 10px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+
+.dialog_choose_time .date_picker_range .react-datepicker .react-datepicker__month-container .react-datepicker__header {
+  background-color: transparent !important;
+}
+
+.react-datepicker__day-names {
+  background-color: lightgreen;
+}
+
+.dialog_choose_time .date_picker_range .react-datepicker .react-datepicker__month .react-datepicker__week .react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  background-color: lightgreen !important;
+}
+
+.dialog_choose_time .date_picker_range .react-datepicker .react-datepicker__month .react-datepicker__week .react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background-color: red !important;
+}
+
+.dialog_choose_time .date_picker_range .react-datepicker .react-datepicker__month-container .react-datepicker__header select {
+  border: none !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dialog_choose_time .date_picker_range .react-datepicker .react-datepicker__month-container .react-datepicker__header select:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.dialog_choose_time .date_picker_range .react-datepicker {
+  border: none !important;
+}
+
+.hr_datepicker_tk {
+  margin-left: 10px;
+  width: 1px;
+  height: 300px;
+  background-color: lightgray;
+}
+
+.btn_month_tk:hover {
+  background-color: rgb(107, 182, 107);
+}
+
+.btn_month_tk {
+  font-size: 16px;
+  cursor: pointer;
+  background-color: rgb(126, 218, 126);
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.box_btn_filter {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trai-trai {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.App12 {
+  background-image: linear-gradient(to right, #027525, #a9b427);
+  display: flex;
+  height: 37px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.MuiDialogContent-root {
+  flex: 1 1 auto;
+  /* padding: 8px 24px; */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.search-product-parent1 {
+  /* background-color: #fff; */
+}
+
+.MuiDialogContent-root {
+  flex: 1 1 auto;
+  padding: 0 !important;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Table-headTable-9 {
+  height: 40px !important;
+  top: 0;
+}
+
+.img_search12 {
+  position: absolute;
+  left: 30px;
+  top: 28px;
+  z-index: 1;
+}
+
+.header_child12 {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+  flex-wrap: wrap;
+}
+
+.tong-phaii {
+  width: 100%;
+  background-color: #fff;
+}
+
+/* ThongKe2 */
+
+.TK2_KhungChua {
+  width: 100%;
+  background-color: aqua;
+  display: flex;
+}
+.tien-thuong{
+  /* display: flex; */
+    flex-wrap: wrap;
+    width: 170px;
+    border-radius: 7px;
+    background-color: white;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.tien-thuong2{
+  /* display: flex; */
+    flex-wrap: wrap;
+    width: 170px;
+    border-radius: 7px;
+    background-color: aqua;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.MuiButton-textPrimary {
+  min-width: 68px !important;
+  background-color: grey !important;
+  color: white !important;
+  font-weight: bolder !important;
+}
+#commit.MuiButton-textPrimary {
+  background: green !important;
+    margin-left: 7px !important;
+}
+#cancel.MuiButton-textPrimary {
+  background: red !important;
+    margin-left: 7px !important;
+}
+#commit.MuiButton-textPrimary {
+  color: white !important;
+}
+#cancel.MuiButton-textPrimary {
+  color: white !important;
+}
+.TK2_titleleft{
+  width: 90%;
+  height: 30px;
+  font-size: 1.1vw;
+  overflow: hidden;
+  background-color: transparent;
+  border: #fff;
+  /* border-bottom: 1px solid #757373; */
+  text-align: left;
+  color: #a7b323;
+  padding: 10px 5px 0px 5px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.TK2_btnleft {
+  width: 90%;
+  height: 7vh;
+  overflow: hidden;
+  background-color: transparent;
+  border: #fff;
+  border-bottom: 1px solid #757373;
+  text-align: left;
+  color: white;
+  padding: 10px 5px 10px 5px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 1.0vw;
+}
+
+.TK2_btnleft:hover {
+  color: rgb(255, 238, 0);
+  cursor: pointer;
+}
+
+.DHOffline {
+  cursor: pointer;
+  margin: 3px;
+  color: white;
+  border: none;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+  background-color: #5099E5;
+
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+}
+
+.TK2_btnleft:focus {
+  color: white;
+}
+
+.TK2_TenTable {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.TK2_KhungBtn {
+  width: 35%;
+  text-align: right;
+  margin: auto;
+}
+
+.TK2_Btn {
+  width: 15%;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fdbe07;
+}
+
+.TK2_KhungBoLoc {
+  width: 15%;
+  margin: auto;
+}
+
+.open_option_thongke {
+  position: absolute;
+  top: 10%;
+  left: 100%;
+  /* width: 2vw; */
+  height: 12vh;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #197420;
+  border-left: none;
+  cursor: pointer;
+}
+
+.input_remove_arrow>input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.search-product-parent_thongke .sc-ifAKCX .wrapper .sc-bwzfXH
+{
+    overflow: auto;
+    height: 300px;
+}
+.inputKM {
+  margin-top: 10px;
+}
+.tong_trai_thongke::-webkit-scrollbar {
+  width: .8vw;
+  /* margin-right: -5px; */
+}
+
+/* Track */
+
+.tong_trai_thongke::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px gray;
+  border-radius: 10px;
+}
+
+/* Handle */
+
+.tong_trai_thongke::-webkit-scrollbar-thumb {
+  background: rgb(172, 172, 61);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+
+.tong_trai_thongke::-webkit-scrollbar-thumb:hover {
+  background: rgb(172, 172, 61);
+}
+.btnthemlohan {
+  margin: 3px !important;
+  cursor: pointer ;
+  margin: 3px !important;
+  color: white !important;
+  background-color: #fdbe07 !important;
+  margin: 3px !important;
+  border: none !important;
+  padding: 10px !important;
+  padding-left: 14px !important;
+  border-radius: 6px !important;
+  position: absolute !important;
+    top: 10px !important;
+    left: 15px !important;
+}
+.input-text1212 {
+  height: 25px;
+  width: 98%;
+  font-size: 13px;
+  background-color: white;
+  padding: 10px 0px 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 3px 3px 9px rgb(0 0 0 / 8%);
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.MuiTableCell-root{border-bottom: none}
+.dropbtn{
+  text-align: center;
+  color: #197420 !important;
+  font-weight: bold;
+  padding: 15px 20px 15px 20px;
+  display: flex;
+  cursor: pointer;
+}
+.dropbtn:hover{
+  color: #fdbe07 !important;
+  border-bottom: 3px solid #fdbe07;
+}
+.dropdown-content1:hover{
+  color: #fdbe07 !important;
+  border-bottom: 3px solid #fdbe07;
+}
+.input-text12{
+  height: 35px;
+  border: 0.5px solid #ccc;
+  border-radius: 5px;
+}
+.MuiAutocomplete-inputRoot[class*="MuiInput-root"] .MuiAutocomplete-input:first-child .input-text12{
+  padding: 11px 0 !important;
+
+}
+
+.submenu{
+  /* margin: 0 auto; */
+  padding: 0px !important;
+  align-self: center;
+}
+.submenu1{
+  /* margin: 0 auto; */
+  padding: 0px !important;
+}
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.cba:hover{
+  color: none !important;
+
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.chubang {
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+.chubang1 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  align-self: center !important;
+}
+
+@media (min-width: 600px){
+  .MuiToolbar-regular {
+    /* min-height: 0px; */
+    min-height: 0px !important ;
+  }
+}
