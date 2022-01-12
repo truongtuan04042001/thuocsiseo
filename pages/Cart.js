@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import '../css/giohang.css'
-import image_default from '../images/image-default.jpg'
-import { API_URL } from '../constants/constants'
-import Header2 from './Header2';
+import image_default from '../public/images/image-default.jpg'
+import { API_URL } from '../src/constants/constants'
+import Header from './Header';
 import Footer from './Footer';
 import Dialog from '@material-ui/core/Dialog';
 import Button from '@material-ui/core/Button';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
-import { useHistory } from 'react-router-dom';
-//React-toastify asfasfd
+import { useRouter } from 'next/router'
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import MyLoader from './Loading'
+import MyLoader from '../src/components/Loading'
+import Link from "next/link"
 
 toast.configure()
 const customId = "custom-id-yes";
@@ -55,17 +53,6 @@ const notify_nhaptaysp = (tensp) => {
     });
 }
 <ToastContainer limit={1} />
-
-// const customStyles = {
-//     content: {
-//         top: '50%',
-//         left: '50%',
-//         right: 'auto',
-//         bottom: 'auto',
-//         marginRight: '-50%',
-//         transform: 'translate(-50%, -50%)',
-//     },
-// };
 
 const GioHang = () => {
     const [maNV, setmaNV] = useState(null)
@@ -208,7 +195,8 @@ const GioHang = () => {
             })
     }
 
-    const history = useHistory();
+    // const history = useHistory();
+    const router = useRouter()
 
     const LayMaNV = async () => {
         if (localStorage.getItem("accesstoken") !== null) {
@@ -231,11 +219,11 @@ const GioHang = () => {
                             getGioHangRedis(data[0].MaNV)
                         }, 10);
                     } else {
-                        history.push("/")
+                        router.push("/")
                     }
                 })
         } else {
-            history.push("/")
+            router.push("/")
         }
     }
 
@@ -408,7 +396,7 @@ const GioHang = () => {
 
     return (
         <div>
-            <Header2 MaNVvalue={MaNVvalue} capNhatSLGH={soLuongTrongGio} capNhatTTGH={strTogTien} ></Header2>
+            <Header MaNVvalue={MaNVvalue} capNhatSLGH={soLuongTrongGio} capNhatTTGH={strTogTien} ></Header>
             <div className='giohang'>
 
                 {/* một số dòng thông báo, chú ý của giỏ hàng */}
@@ -468,36 +456,36 @@ const GioHang = () => {
                                                             <div className='styles_product_image__3KbWD'>
                                                                 {
                                                                     item.MaHang.indexOf('COMBO_') >= 0 ?
-                                                                        <Link className='MuiButtonBase-root78 MuiCardActionArea-root'
-                                                                            to={{
-                                                                                pathname: `/DetailCombo/${item.MaHang}`,
-                                                                                // state: {
-                                                                                //     item: item
-                                                                                // },
+                                                                        <Link
+                                                                            href={{
+                                                                                pathname: `/DetailCombo`,
+                                                                                query: { item: item.MaHang }
                                                                             }}
                                                                         >
                                                                             <div style={{ display: 'inline-block', maxWidth: "100%", overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                                                                                 <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', boxSizing: 'border-box' }}>
-                                                                                    {item.HinhAnh == null ? <img src={image_default} width='100%' height='120'></img> : <img src={item.HinhAnh} onError={handleImgError} width='100%' height="120"></img>}
-
-                                                                                    {/* <img src='https://thuocsi.vn/_next/image?url=https%3A%2F%2Fimg-proxy.thuocsi.vn%2Fthuocsi-live%2Fimages%2Fname12892-54496346.png%3Fsize%3D400&w=100&q=100' style={{ display: 'block' }} width='50px' height='50px'></img> */}
+                                                                                    {
+                                                                                        item.HinhAnh == null ?
+                                                                                            <img src={image_default} width='100%' height='120'></img>
+                                                                                            :
+                                                                                            <img src={item.HinhAnh} onError={handleImgError} width='100%' height="120"></img>}
                                                                                 </div>
                                                                             </div>
                                                                         </Link>
                                                                         :
-                                                                        <Link className='MuiButtonBase-root78 MuiCardActionArea-root'
-                                                                            to={{
-                                                                                pathname: `/ChiTietSanPham/${item.MaHang}`,
-                                                                                // state: {
-                                                                                //     item: item
-                                                                                // },
+                                                                        <Link
+                                                                            href={{
+                                                                                pathname: `/ChiTietSanPham`,
+                                                                                query: { item: item.MaHang }
                                                                             }}
                                                                         >
                                                                             <div style={{ display: 'inline-block', maxWidth: "100%", overflow: 'hidden', position: 'relative', boxSizing: 'border-box', margin: 0 }}>
                                                                                 <div style={{ display: 'inline-block', maxWidth: '100%', overflow: 'hidden', boxSizing: 'border-box' }}>
-                                                                                    {item.HinhAnh == null ? <img src={image_default} width='100%' height='120'></img> : <img src={item.HinhAnh} onError={handleImgError} width='100%' height="120"></img>}
-
-                                                                                    {/* <img src='https://thuocsi.vn/_next/image?url=https%3A%2F%2Fimg-proxy.thuocsi.vn%2Fthuocsi-live%2Fimages%2Fname12892-54496346.png%3Fsize%3D400&w=100&q=100' style={{ display: 'block' }} width='50px' height='50px'></img> */}
+                                                                                    {
+                                                                                        item.HinhAnh == null ? <img src={image_default} width='100%' height='120'></img>
+                                                                                            :
+                                                                                            <img src={item.HinhAnh} onError={handleImgError} width='100%' height="120"></img>
+                                                                                    }
                                                                                 </div>
                                                                             </div>
                                                                         </Link>
@@ -510,21 +498,16 @@ const GioHang = () => {
                                                                 <div className="styles_product_title__3bXWL">
                                                                     {
                                                                         item.MaHang.indexOf('COMBO_') >= 0 ?
-                                                                            <Link className="jss2 jss448" to={{
-                                                                                pathname: `/DetailCombo/${item.MaHang}`,
-                                                                                // state: {
-                                                                                //     item: item
-                                                                                // },
+                                                                            <Link className="jss2 jss448" href={{
+                                                                                pathname: `/DetailCombo`,
+                                                                                query: { item: item.MaHang }
                                                                             }}>
                                                                                 <h2 className="MuiTypography-root styles_product_name__3QmYl MuiTypography-h5 MuiTypography 									gutterBottom"> {item.TenHang} </h2>
-                                                                                {/* <h2 className="MuiTypography-root styles_product_name__3QmYl MuiTypography-h5 									MuiTypography-gutterBottom">lactacyd soft &amp; silky sanofi (c/150ml)</h2> */}
                                                                             </Link>
                                                                             :
-                                                                            <Link className="jss2 jss448" to={{
-                                                                                pathname: `/ChiTietSanPham/${item.MaHang}`,
-                                                                                state: {
-                                                                                    item: item
-                                                                                },
+                                                                            <Link className="jss2 jss448" href={{
+                                                                                pathname: `/ChiTietSanPham`,
+                                                                                query: { item: item.MaHang }
                                                                             }}>
                                                                                 <h2 className="MuiTypography-root styles_product_name__3QmYl MuiTypography-h5 MuiTypography 									gutterBottom"> {item.TenHang} </h2>
                                                                                 {/* <h2 className="MuiTypography-root styles_product_name__3QmYl MuiTypography-h5 									MuiTypography-gutterBottom">lactacyd soft &amp; silky sanofi (c/150ml)</h2> */}
@@ -734,16 +717,16 @@ const GioHang = () => {
 
                                         <div className="MuiGrid-root style_wrapper__1uBx84 MuiGrid-container MuiGrid-item1 MuiGrid-grid-xs-12 MuiGrid-item123">
                                             <p className="MuiTypography-root style_number__2jLSy style_price__cRJst1 MuiTypography-body1 ssss"> {strTogTien} </p>
-                                            <Link onClick={() => { luuGhiChu() }} to='/OrderConfirmation' className="MuiButtonBase-root MuiButton-root MuiButton-text Button__StyledButton-sc-1o9oc71-0 Button__ButtonDefault-sc-1o9oc71-2 eCiseD gzPnbw payment_button">
+                                            {/* <Link onClick={() => { luuGhiChu() }} to='/OrderConfirmation' className="MuiButtonBase-root MuiButton-root MuiButton-text Button__StyledButton-sc-1o9oc71-0 Button__ButtonDefault-sc-1o9oc71-2 eCiseD gzPnbw payment_button">
                                                 <span className="MuiButton-label">Thanh toán</span>
-                                            </Link>
+                                            </Link> */}
                                         </div>
                                     </div>
 
                                     {/* Tiếp tục đặt hàng */}
 
                                     <div className="MuiGrid-root style_wrapper__1uBx84 MuiGrid-container MuiGrid-item1 MuiGrid-grid-xs-12 MuiGrid-containerww">
-                                        <Link to='/SanPham' className='mauchu'><b className="MuiTypography-root MuiTypography-body2"> Tiếp tục đặt hàng</b></Link>
+                                        {/* <Link to='/SanPham' className='mauchu'><b className="MuiTypography-root MuiTypography-body2"> Tiếp tục đặt hàng</b></Link> */}
                                     </div>
                                 </div>
                             </div>
@@ -756,8 +739,8 @@ const GioHang = () => {
                 {/* footer  */}
 
                 <Footer></Footer>
-            </div>
-        </div>
+            </div >
+        </div >
 
     );
 };

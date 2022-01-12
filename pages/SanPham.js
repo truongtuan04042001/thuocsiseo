@@ -695,7 +695,6 @@ const SanPham = (props) => {
 
     return (
         <div>
-
             <Header MaNVvalue={MaNVvalue} capNhatSLGH={soLuongGioHang} capNhatTTGH={strTogTien} OPModalDN={OPModalDN} callBackApp={DangNhapApp} valueOfModal={openModalDN} />
             <div className="section-sp-parent">
                 {/* <div className="btn-nav-parent"><NavMenu parentCallback={LayGiaTriDanhMuc} /></div> */}

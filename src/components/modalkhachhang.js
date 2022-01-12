@@ -1,14 +1,12 @@
-// CHÚNG TÔI ĐÃ CỐ GẮNG HẾT SỨC //
 import { useEffect, useState } from 'react';
-// import close_modal from '../images/close-modal.png';
-import dky_user from '../images/dky-user.png';
-import dky_phone from '../images/dky-phone.png';
-// import dky_mail from '../images/dky-mail.png';
-import dky_pass from '../images/dky-pass.png';
-// import dky_location from '../images/dky-location.png';
-import show_pass from '../images/show-pass.png';
-// import check from '../images/check.png';
-import '../css/Header.css';
+// import close_modal from '../../public/images/close-modal.png';
+import dky_user from '../../public/images/dky-user.png';
+import dky_phone from '../../public/images/dky-phone.png';
+// import dky_mail from '../../public/images/dky-mail.png';
+import dky_pass from '../../public/images/dky-pass.png';
+// import dky_location from '../../public/images/dky-location.png';
+import show_pass from '../../public/images/show-pass.png';
+// import check from '../../public/images/check.png';
 import Modal from 'react-modal';
 import Select from 'react-select';
 import { API_URL } from '../constants/constants'
@@ -20,6 +18,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 toast.configure()
+
 
 const customStyles = {
     content: {
@@ -37,7 +36,7 @@ const customStyles = {
         // zIndex: 2
     },
 };
-Modal.setAppElement('#root')
+// Modal.setAppElement('#root')
 
 const ModalKhachHang = (props) => {
     // const sendData = () => {

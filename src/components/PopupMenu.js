@@ -1,8 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import menu_icon from '../images/menu-icon.png';
-import '../css/Header.css';
-import '../css/giohang.css';
+import menu_icon from '../../public/images/menu-icon.png';
 import Button from '@material-ui/core/Button';
 import { Dialog } from '@material-ui/core';
 import DialogTitle from '@material-ui/core/DialogTitle';

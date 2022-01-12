@@ -259,8 +259,6 @@ const TrangChu = (props) => {
     setInputValue(inputValue);
   }
 
-  const [random, setrandom] = useState(0)
-
 
   ///hàm verifytoken
   const verifytoken = () => {
@@ -1167,19 +1165,35 @@ const TrangChu = (props) => {
   }, [props.rand])
 
   const [innerWidth, setInnerWidth] = useState(0)
+
   useEffect(() => {
     const abc = window.innerWidth
-    // console.log(`${new Date().getTime()} abc=`, abc)
     setInnerWidth(abc)
   }, [])
+
+  const [soLuongGioHang, setSoLuongGioHang] = useState(0)
+  const [strTogTien, setStrTogTien] = useState()
+
+  useEffect(() => {
+    let tongSoLuong = 0
+    let tTien = 0
+    gioHang.forEach(e => {
+      tongSoLuong += e.SoLuong
+      tTien += (e.SoLuong * (e.GiaBan - (e.GiaBan * e.PhanTramKM / 100)))
+    });
+    setSoLuongGioHang(tongSoLuong)
+    const vND = tTien.toLocaleString('it-IT', { style: 'currency', currency: 'VND' })
+    setStrTogTien(vND)
+  }, [gioHang])
+
 
   return (
     <div>
       <Head>
-        <title>Trang Chủ  ádfádfádf</title>
-        <meta name="description" content="Trang chủ ấdfádfádfádf" />
+        <title>Trang Chủ </title>
+        <meta name="description" content="Trang chủ" />
       </Head>
-      <Header valueOfModal={openModalDN} OPModalDN={OPModalDN} callBackApp={DangNhapApp} LayGiaTriSearch={SearchProduct} upDate={lamMoiGH} />
+      <Header valueOfModal={openModalDN} OPModalDN={OPModalDN} callBackApp={DangNhapApp} LayGiaTriSearch={SearchProduct} capNhatSLGH={soLuongGioHang} capNhatTTGH={strTogTien} />
       {
         innerWidth < 425 ?
           <div className="header_mobile_trangchu">

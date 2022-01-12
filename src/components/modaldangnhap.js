@@ -1,20 +1,17 @@
-// CHÚNG TÔI ĐÃ CỐ GẮNG HẾT SỨC //
 import { useEffect, useState } from 'react';
-import close_modal from '../images/close-modal.png';
-import dky_user from '../images/dky-user.png';
-import dky_phone from '../images/dky-phone.png';
-import dky_mail from '../images/dky-mail.png';
-import dky_pass from '../images/dky-pass.png';
-import dky_location from '../images/dky-location.png';
-import show_pass from '../images/show-pass.png';
-import { useCookies } from 'react-cookie';
-import '../css/Header.css';
-import Modal from 'react-modal';
-// truong
+import close_modal from '../../public/images/close-modal.png';
+import dky_user from '../../public/images/dky-user.png';
+import dky_phone from '../../public/images/dky-phone.png';
+import dky_mail from '../../public/images/dky-mail.png';
+import dky_pass from '../../public/images/dky-pass.png';
+import dky_location from '../../public/images/dky-location.png';
+import show_pass from '../../public/images/show-pass.png';
 import { API_URL } from '../constants/constants'
-import QuenMK from './QuenMatKhau';
+// import QuenMK from './QuenMatKhau';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Modal from 'react-modal';
+
 toast.configure()
 
 const customStyles = {
@@ -32,7 +29,6 @@ const customStyles = {
         zIndex: 2
     },
 };
-Modal.setAppElement('#root')
 
 var nhanVien = []
 const ModalDangNhap = (props) => {
@@ -50,7 +46,6 @@ const ModalDangNhap = (props) => {
     const [type_pass_nv, setTypePassNV] = useState('password');
     const [popup_check, setPopupCheck] = useState(false);
     const [check_dieukhoan, setDieuKhoan] = useState(false);
-    const [cookies, setCookie] = useCookies(['user']);
     const sendDataToHeader = (tenNV) => {
         props.callBackParent(tenNV);
     }
@@ -278,7 +273,7 @@ const ModalDangNhap = (props) => {
                             <label htmlFor="checkbox_dieukhoan" id="title_ghinho_dnhap">Ghi nhớ đăng nhập</label>
                         </div> */}
                         {/* <ModalKhachHang/> */}
-                        <QuenMK></QuenMK>
+                        {/* <QuenMK></QuenMK> */}
                         <button id="btn_dky" onClick={dangNhap}><b>Đăng nhập</b></button>
 
                         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
