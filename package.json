@@ -36,6 +36,7 @@
     "firebase": "^8.7.1",
     "html-to-draftjs": "^1.5.0",
     "interweave": "^12.8.0",
+    "next": "^12.0.7",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-autosuggest": "^10.1.0",
@@ -52,8 +53,6 @@
     "react-image-gallery": "^1.2.6",
     "react-modal": "^3.14.2",
     "react-pagination-library": "^0.1.14",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
     "react-search-autocomplete": "^5.4.2",
     "react-select": "^4.3.1",
     "react-slick": "^0.28.1",
@@ -64,9 +63,12 @@
     "xlsx": "^0.17.0"
   },
   "scripts": {
-    "ok": "react-scripts start",
-    "b": "react-scripts build",
-    "postBuild": "react-snap"
+    "d": "next dev",
+    "dev": "next dev",
+    "b": "next build",
+    "build": "next build",
+    "s": "next start",
+    "start": "next start"
   },
   "eslintConfig": {
     "extends": [
