@@ -1,5 +1,6 @@
 import fast_cart from '../public/images/fast-cart.png';
 import menu_tag from '../public/images/tag-menu.png';
+import sale from '../public/images/sale.png';
 import { useEffect, useState } from 'react';
 // import ModalDangNhap from './modaldangnhap';
 // import ModalKhachHang from './modalkhachhang';
@@ -285,7 +286,7 @@ const Header = (props) => {
               // query: { name: 'test' },
             }}>
             <a>
-              <img className='menu-a-img' src={fast_cart}></img>
+              <Image src={fast_cart}></Image>
               <div id="san_pham">Trang Chủ</div>
             </a>
           </Link>
@@ -297,6 +298,26 @@ const Header = (props) => {
             <a>
             <Image src={menu_tag}></Image>
             <div id="san_pham">Sản Phẩm</div>
+            </a>
+          </Link>
+          <Link className="menu-a" onClick={() => { verifytoken() }}
+            href={{
+              pathname: '/DatHangNhanh',
+              // query: { name: 'test' },
+            }}>
+            <a>
+            <Image src={fast_cart}></Image>
+            <div id="san_pham">Đặt Hàng Nhanh</div>
+            </a>
+          </Link>
+          <Link className="menu-a" onClick={() => { verifytoken() }}
+            href={{
+              pathname: '/KhuyenMai',
+              // query: { name: 'test' },
+            }}>
+            <a>
+            <Image src={sale}></Image>
+            <div id="san_pham">Khuyến Mãi</div>
             </a>
           </Link>
           {/* 
