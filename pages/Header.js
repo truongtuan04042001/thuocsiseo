@@ -1,4 +1,5 @@
 import fast_cart from '../public/images/fast-cart.png';
+import menu_tag from '../public/images/tag-menu.png';
 import { useEffect, useState } from 'react';
 // import ModalDangNhap from './modaldangnhap';
 // import ModalKhachHang from './modalkhachhang';
@@ -7,7 +8,7 @@ import { API_URL } from '../src/constants/constants'
 import { useRouter } from 'next/router'
 import Link from "next/link"
 import React from 'react'
-
+import Image from 'next/image'
 
 
 const Header = (props) => {
@@ -286,6 +287,16 @@ const Header = (props) => {
             <a>
               <img className='menu-a-img' src={fast_cart}></img>
               <div id="san_pham">Trang Chủ</div>
+            </a>
+          </Link>
+          <Link className="menu-a" onClick={() => { verifytoken() }}
+            href={{
+              pathname: '/SanPham',
+              // query: { name: 'test' },
+            }}>
+            <a>
+            <Image src={menu_tag}></Image>
+            <div id="san_pham">Sản Phẩm</div>
             </a>
           </Link>
           {/* 

@@ -1,7 +1,7 @@
 import { element } from "prop-types";
 import React, { useState } from "react";
 import Pagination from "react-pagination-library";
-import '../css/Pagination.css'
+//import '../css/Pagination.css'
 
 const Pagination1 = (props) => {
 

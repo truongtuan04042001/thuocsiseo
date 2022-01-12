@@ -6,7 +6,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import tune_danhmuc from '../images/tune-danhmuc.png';
+//import tune_danhmuc from '../public/tune-danhmuc.png';
 import MuiListItem from "@material-ui/core/ListItem";
 import { API_URL } from '../constants/constants'
 const useStyles = makeStyles((theme) => ({
@@ -133,7 +133,7 @@ export default function DanhMuc(props) {
     return (
         <div style={{ width: '20%', margin: 10 }} className="danh_muc">
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: 10 }}>
-                <img className='menu-a-img' src={tune_danhmuc} alt="Bộ lọc tìm kiếm"></img>
+                {/* <img className='menu-a-img' src={tune_danhmuc} alt="Bộ lọc tìm kiếm"></img> */}
                 <div className='title_category' style={{ marginLeft: 7, fontWeight: 500 }}>Bộ Lọc Tìm Kiếm</div>
             </div>
             <hr style={{ margin: 15, marginBottom: 10 }}></hr>
