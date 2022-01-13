@@ -689,8 +689,18 @@ const GioHang = () => {
 
                                     {/* Tiếp tục đặt hàng */}
 
-                                    <div className="MuiGrid-root style_wrapper__1uBx84 MuiGrid-container MuiGrid-item1 MuiGrid-grid-xs-12 MuiGrid-containerww">
-                                        <Link to='/SanPham' className='mauchu'><b className="MuiTypography-root MuiTypography-body2"> Tiếp tục đặt hàng</b></Link>
+                                    <div >
+                                        <Link
+                                            href={{
+                                                pathname: `/SanPham`,
+                                            }}
+                                        >
+                                            <div
+                                                className="MuiGrid-root style_wrapper__1uBx84 MuiGrid-container MuiGrid-item1 MuiGrid-grid-xs-12 MuiGrid-containerww"
+                                            >
+                                                <b className="MuiTypography-root MuiTypography-body2"> Tiếp tục đặt hàng</b>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </div>
                     }
@@ -717,16 +727,36 @@ const GioHang = () => {
 
                                         <div className="MuiGrid-root style_wrapper__1uBx84 MuiGrid-container MuiGrid-item1 MuiGrid-grid-xs-12 MuiGrid-item123">
                                             <p className="MuiTypography-root style_number__2jLSy style_price__cRJst1 MuiTypography-body1 ssss"> {strTogTien} </p>
-                                            {/* <Link onClick={() => { luuGhiChu() }} to='/OrderConfirmation' className="MuiButtonBase-root MuiButton-root MuiButton-text Button__StyledButton-sc-1o9oc71-0 Button__ButtonDefault-sc-1o9oc71-2 eCiseD gzPnbw payment_button">
-                                                <span className="MuiButton-label">Thanh toán</span>
-                                            </Link> */}
+                                            <Link
+
+                                                href={{
+                                                    pathname: `/OrderConfirmation`,
+                                                }}
+                                            >
+                                                <div
+                                                    className="MuiButtonBase-root MuiButton-root MuiButton-text Button__StyledButton-sc-1o9oc71-0 Button__ButtonDefault-sc-1o9oc71-2 eCiseD gzPnbw payment_button"
+                                                >
+                                                    <span className="MuiButton-label">Thanh toán</span>
+                                                </div>
+                                            </Link>
                                         </div>
                                     </div>
 
                                     {/* Tiếp tục đặt hàng */}
 
                                     <div className="MuiGrid-root style_wrapper__1uBx84 MuiGrid-container MuiGrid-item1 MuiGrid-grid-xs-12 MuiGrid-containerww">
-                                        {/* <Link to='/SanPham' className='mauchu'><b className="MuiTypography-root MuiTypography-body2"> Tiếp tục đặt hàng</b></Link> */}
+                                        <Link
+
+                                            href={{
+                                                pathname: `/SanPham`,
+                                            }}
+                                        >
+                                            <div
+                                                className="MuiButtonBase-root MuiButton-root MuiButton-text Button__StyledButton-sc-1o9oc71-0 Button__ButtonDefault-sc-1o9oc71-2 eCiseD gzPnbw payment_button"
+                                            >
+                                                <b className="MuiTypography-root MuiTypography-body2"> Tiếp tục đặt hàng</b>
+                                            </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

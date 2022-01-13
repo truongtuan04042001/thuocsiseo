@@ -1,21 +1,19 @@
 import React, { useState, useEffect } from 'react';
-import Header2 from './Header2';
+import Header from './Header';
 import Footer from './Footer';
-import { API_URL } from '../constants/constants'
+import { API_URL } from '../src/constants/constants'
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogActions from '@material-ui/core/DialogActions';
-import { useHistory } from 'react-router-dom';
+import { useRouter } from 'next/router'
 import Select from 'react-select';
-import options from './options';
+import options from '../src/components/options';
 import Modal from 'react-modal';
-import '../css/tieptucdathang.css'
-import '../css/dathangnhanh.css'
-import close_modal from '../images/close-modal.png';
-import repeatblack from '../images/repeatblack.png'
-import gift from '../images/gift_newuser.gif'
-import Clock from './Clock'
+import close_modal from '../public/images/close-modal.png';
+import repeatblack from '../public/images/repeatblack.png'
+import gift from '../public/images/gift_newuser.gif'
+import Clock from '../src/components/Clock'
 
 // let maNV = "null"
 
@@ -224,7 +222,7 @@ const OrderConfirmation = () => {
             })
     }
 
-    const history = useHistory();
+    const router = useRouter()
 
     const layMagg = async (maNV) => {
         ///lấy mã giảm giá
@@ -307,11 +305,11 @@ const OrderConfirmation = () => {
                             layListQuaTang();
                         }, 10);
                     } else {
-                        history.push("/")
+                        router.push("/")
                     }
                 })
         } else {
-            history.push("/")
+            router.push("/")
         }
     }
 
@@ -580,15 +578,8 @@ const OrderConfirmation = () => {
     }
 
     const thanhToan = () => {
-        if (maNV != null || maNV != undefined) {
-            localStorage.setItem('ghiChu', ``)
-            if (localStorage.getItem('ghiChu') != null || localStorage.getItem('ghiChu') != undefined) {
-              //  setGhiChu(localStorage.getItem('ghiChu'))
-                tiepTucThanhToan()
-            } else {
-                alert("Lỗi bất đồng bộ Giỏ Hàng. Vui lòng trở về trang chủ.")
-                setAnNutDatHang(false)
-            }
+        if (maNV != null && maNV != undefined) {
+            tiepTucThanhToan()
         } else {
             alert("Lỗi rồi! Vui lòng tải lại website để tiếp tục đặt hàng .")
             setAnNutDatHang(false)
@@ -696,7 +687,7 @@ const OrderConfirmation = () => {
 
     return (
         <div>
-            <Header2 MaNVvalue={MaNVvalue} />
+            <Header MaNVvalue={MaNVvalue} />
             <div className='phan-giua'>
                 {/* <div className='phankhongco-dnhap-dki'>
                     <div className='phan-dki'>
