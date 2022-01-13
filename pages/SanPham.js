@@ -62,7 +62,7 @@ let maNV = "null"
 const SanPham = (props) => {
     const [sotrang, setSoTrang] = useState(1);
     const router = useRouter()
-    const [sessionstorage, setSessionstorage] = useState('');
+    const [sessionstorage, setSessionstorage] = useState(null);
 
     useEffect(() => {
         window.scrollTo({
@@ -246,6 +246,7 @@ const SanPham = (props) => {
 
         if (tags != null && sotrang != null && sotrang > 0) {
             sessionStorage.removeItem("Searchfromtc")
+            setSessionstorage(null)
             fetch(API_URL + '/searchtags', {
                 method: 'POST',
                 headers: {
@@ -300,6 +301,7 @@ const SanPham = (props) => {
 
             } else {
                 sessionStorage.removeItem("Searchfromtc")
+                setSessionstorage(null)
                 if (tags != null) {
                     fetch(API_URL + '/searchtags', {
                         method: 'POST',
@@ -373,6 +375,7 @@ const SanPham = (props) => {
                     })
             } else {
                 sessionStorage.removeItem("Searchfromtc")
+                setSessionstorage(null)
                 fetch(API_URL + '/searchfront', {
                     method: 'POST',
                     headers: {
@@ -577,6 +580,7 @@ const SanPham = (props) => {
             setValue(searchString)
             if (searchString === "") {
                 sessionStorage.removeItem("Searchfromtc")
+                setSessionstorage(null)
                 fetch(API_URL + '/searchfront', {
                     method: 'POST',
                     headers: {
@@ -598,6 +602,7 @@ const SanPham = (props) => {
                     })
             } else {
                 sessionStorage.removeItem("Searchfromtc")
+                setSessionstorage(null)
                 fetch(API_URL + '/searchfront', {
                     method: 'POST',
                     headers: {
@@ -626,6 +631,7 @@ const SanPham = (props) => {
 
         setValue(item.TenHang)
         sessionStorage.removeItem("Searchfromtc")
+        setSessionstorage(null)
         fetch(API_URL + '/searchfront', {
             method: 'POST',
             headers: {
@@ -649,6 +655,7 @@ const SanPham = (props) => {
 
     const handleOnClear = () => {
         sessionStorage.removeItem("Searchfromtc")
+        setSessionstorage(null)
         fetch(API_URL + '/searchfront', {
             method: 'POST',
             headers: {
