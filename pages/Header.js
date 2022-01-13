@@ -93,6 +93,7 @@ const Header = (props) => {
   };
 
   const DangNhap = (tenNV) => {
+    
     if (localStorage.getItem("accesstoken") !== null) {
       setLocal(localStorage.getItem("accesstoken"))
       fetch(API_URL + '/verifytoken', {
@@ -118,6 +119,7 @@ const Header = (props) => {
         })
     } else {
       if (tenNV == `NOTLOGIN`) {
+        console.log("NOTLOGIN")
         setLoginCheck(!login_check)
         setTen(tenNV)
         tenHienThi()

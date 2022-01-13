@@ -678,7 +678,7 @@ const TrangChu = (props) => {
 
   //Lấy combo ra hiển thị: Namdeptrai
   const [dataCombo, setDataCombo] = useState([])
-  const [local, setLocal] = useState('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6IjAzNDUzNDUzNDUiLCJpYXQiOjE2NDE5MDY0NjcsImV4cCI6MTY0MjA3OTI2N30.7IsrZlYVysPlQjJMr58OijkwWlHrCRk955PPJWh8YLI')
+  const [local, setLocal] = useState(null)
 
   // useEffect(() => {
   // localStorage.setItem('accesstoken', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6IjAzNDUzNDUzNDUiLCJpYXQiOjE2NDE5MDY0NjcsImV4cCI6MTY0MjA3OTI2N30.7IsrZlYVysPlQjJMr58OijkwWlHrCRk955PPJWh8YLI')
