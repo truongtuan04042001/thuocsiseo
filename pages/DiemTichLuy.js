@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Header2 from '../components/Header2';
-import Footer from '../components/Footer';
-import { API_URL } from '../constants/constants'
+import Header from './/Header';
+import Footer from './Footer';
+import { API_URL } from '../src/constants/constants'
 import React from 'react'
-import repeatblack from '../images/repeatblack.png'
+import repeatblack from '../public/images/repeatblack.png'
 const DiemTichLuy = () => {
     const [HovaTen, setHovaTen] = useState();
     const [loyaltyPoint, setLoyaltyPoint] = useState(0)
@@ -51,7 +51,7 @@ const DiemTichLuy = () => {
 
     return (
         <div className='div_body'>
-            <Header2></Header2>
+            <Header></Header>
             <div className='div_khung'>
                 <div className='div_traidtl'>
                     <div style={{ paddingBottom: '20px' }}>Tài khoản của<h4 className='h4_ten'>{HovaTen}</h4></div>

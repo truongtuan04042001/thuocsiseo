@@ -109,7 +109,7 @@ const Header = (props) => {
             setLoginCheck(!login_check)
             setTen(tenNV)
             tenHienThi()
-            props.callBackApp();
+            // props.callBackApp();
           } else {
             console.log("loi roi")
           }
@@ -119,7 +119,7 @@ const Header = (props) => {
         setLoginCheck(!login_check)
         setTen(tenNV)
         tenHienThi()
-        props.callBackApp();
+       // props.callBackApp();
       } else {
         fetch(API_URL + '/verifytoken', {
           method: 'POST',

@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import Header2 from '../components/Header2';
-import Footer from '../components/Footer';
-import '../css/tktk.css'
+import Header from './Header';
+import Footer from './Footer';
+
 import Modal from 'react-modal';
-import { API_URL } from '../constants/constants'
+
+import { API_URL } from '../src/constants/constants'
 import Select from 'react-select';
-import options from './options';
-import { Redirect, useHistory } from 'react-router-dom';
+import options from '../src/components/options';
+import { useRouter } from 'next/router'
 const ThongTinTaiKhoan = () => {
-    const history = useHistory();
+ 
     const [tendangnhap, setTenDangNhap] = useState();
     const [data, setData] = useState();
     const [HovaTen, setHovaTen] = useState();
@@ -28,7 +29,7 @@ const ThongTinTaiKhoan = () => {
     const [DiaChiDN, setDiaChiDN] = useState();
     const [PhuongXaDN, setPhuongXaDN] = useState();
     const [TinhDN, setTinhDN] = useState({ value: 'null', label: 'Chọn khu vực' });
-
+    const router = useRouter()
     const Modal_ThayDoiMK = () => {
         setIsOpen(!modalIsOpen)
     }
@@ -52,7 +53,7 @@ const ThongTinTaiKhoan = () => {
                 // setHovaTen(Object.values(data[0]));
                 if (data == "token not accepted") {
                     localStorage.removeItem("accesstoken")
-                    history.push("/")
+                    router.push("/")
                 } else if (data[0] !== undefined) {
                     setHovaTen(data[0].TenNV);
                     setSdt(data[0].SDT);
@@ -273,7 +274,7 @@ const ThongTinTaiKhoan = () => {
 
     return (
         <div className='div_body'>
-            <Header2 MaNVvalue={MaNVvalue}  ></Header2>
+            <Header MaNVvalue={MaNVvalue}  ></Header>
             <div className='div_khung'>
 
                 <div className='div_trai'>

@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
-import Header2 from './Header2'
+import Header from './Header'
 import Footer from './Footer'
-import { API_URL } from '../constants/constants'
+import { API_URL } from '../src/constants/constants'
 import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 // import Button from '@material-ui/core/Button';
 // import DialogActions from '@material-ui/core/DialogActions';
 // import DialogTitle from '@material-ui/core/DialogTitle';
-import PhantrangDH from './PhantrangDH';
+import PhantrangDH from '../src/components/PhantrangDH';
 import React from 'react'
 const DonHangCuaToi = () => {
     const [HovaTen, setHovaTen] = useState();
@@ -168,7 +168,7 @@ const DonHangCuaToi = () => {
     }
     return (
         <div className='div_body'>
-            <Header2></Header2>
+            <Header></Header>
             <div className='div_khung'>
                 <div className='div_trai'>
                     <div style={{ paddingBottom: '20px' }}>Tài khoản của<h4 className='h4_ten'>{HovaTen}</h4></div>
