@@ -356,9 +356,9 @@ const GioHang = () => {
         setLamMoiGH(rand)
     }
 
-    const luuGhiChu = () => {
-        localStorage.setItem("ghiChu", ghiChu)
-    }
+    // const luuGhiChu = () => {
+        // localStorage.setItem("ghiChu", ghiChu)
+    // }
 
     const [openDialog, setOpenDialog] = useState(false)
 

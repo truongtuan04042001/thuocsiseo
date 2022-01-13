@@ -70,10 +70,8 @@ const notify_nhaptaysp = (tensp, soluong) => {
   });
 }
 
-
 <ToastContainer limit={1} />
 
-// let maNV = "null"
 const TrangChu = (props) => {
   const settings = {
     dots: false,
@@ -224,20 +222,7 @@ const TrangChu = (props) => {
       }
     ]
   };
-  // const images = [
-  //   {
-  //     original: "https://api.thuocsionline.vn/uploads_Images/BANNER-1.jpg",
-  //     thumbnail: "http://lorempixel.com/250/150/nature/1/"
-  //   },
-  //   {
-  //     original: "https://api.thuocsionline.vn/uploads_Images/BANNER-2.jpg",
-  //     thumbnail: "http://lorempixel.com/250/150/nature/2/"
-  //   },
-  //   {
-  //     original: "https://api.thuocsionline.vn/uploads_Images/BANNER-3.jpg",
-  //     thumbnail: "http://lorempixel.com/250/150/nature/3/"
-  //   },
-  // ];
+
   const [value, setValue] = useState();//giá trị của search box
   const [inputValue, setInputValue] = useState('');
   const [openModalDN, setOpenModalDN] = useState(false);
@@ -246,11 +231,14 @@ const TrangChu = (props) => {
     setOpenModalDN(value)
   }
 
-
   const DangNhapApp = (tenNV) => {
     setLoginCheckApp(!login_check_app)
     // đăng nhập thành công thì update giỏ vào sản phẩm
-    layMaNV()
+    setLocal(localStorage.getItem('accesstoken'))
+    setTimeout(() => {
+      setLocal(localStorage.getItem('accesstoken'))
+      layMaNV()
+    }, 10);
   };
 
   const SearchProduct = (input, value, inputValue) => {
@@ -258,7 +246,6 @@ const TrangChu = (props) => {
     setValue(value);
     setInputValue(inputValue);
   }
-
 
   ///hàm verifytoken
   const verifytoken = () => {
@@ -271,14 +258,11 @@ const TrangChu = (props) => {
       draggable: true,
       progress: undefined,
     });
-    props.OPModalDN(true);
   }
 
   const [data, setData] = useState([]);//mang san pham
-  const [data2, setData2] = useState([]);//mang san pham
   const [data3, setData3] = useState([]);//mang san pham
   const [gioHang, setGioHang] = useState([])
-  const [ten, setTen] = useState();
   const router = useRouter()
   const [banner, setBanner] = useState([]);
   const [input, setInput] = useState([]);//mang gợi ý của search
@@ -286,79 +270,6 @@ const TrangChu = (props) => {
   const handleImgError = e => {
     e.target.src = image_default;
   };
-
-  useEffect(() => {
-    fetch(API_URL + '/xoaMggHetHan', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-
-      })
-    })
-      .then((response) => response.json())
-      .then(data => {
-
-      })
-  }, []);
-
-  useEffect(async () => {
-    if (local !== null) {
-      fetch(API_URL + '/verifytoken', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          test: local
-        })
-      })
-        .then((response) => response.json())
-        .then(data => {
-          if (data.rs === "token accepted") {
-            // console.log("token con han")
-          } else {
-            // console.log("token het han")
-            localStorage.removeItem("accesstoken")
-            // router.push("/")
-          }
-        })
-    } else {
-      // router.push("/")
-    }
-    fetch(API_URL + '/getsuggestfront', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-      })
-
-    })
-      .then((response) => response.json())
-      .then(data => {
-        setInput(data)
-      })
-    ///hàm lấy banner
-    fetch(API_URL + '/layBanner', {
-      method: 'POST',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-
-      })
-    })
-      .then((response) => response.json())
-      .then(datas => {
-        setBanner(datas)
-      })
-  }, []);
 
   const setGioHangRedis = async (listGH) => {
     if (listGH.length <= 200) {
@@ -375,7 +286,6 @@ const TrangChu = (props) => {
       await fetch(API_URL + "/gioHang/" + maNV, requestOptions)
         .then(response => response.json())
         .then(data => {
-          // chiTietDonHang(data, gioHangRoot)
         })
     } else {
       alert("Một đơn tối đa 200 sản phẩm")
@@ -383,7 +293,6 @@ const TrangChu = (props) => {
   }
 
   const getGioHangRedis = async (items, MaNV) => {
-    // console.log(`${new Date().getTime()} maNV=`, maNV)
     await fetch(API_URL + "/gioHang/" + MaNV)
       .then(response => response.json())
       .then(data => {
@@ -423,51 +332,6 @@ const TrangChu = (props) => {
         if (test == 1) {
           setGioHangRedis(abc)
           alert("Có một số sản phẩm ĐÃ HẾT HÀNG nên số lượng bị giảm")
-        }
-      })
-  }
-
-  const getGioHangRedis2 = async (items, MaNV) => {
-    await fetch(API_URL + "/gioHang/" + MaNV)
-      .then(response => response.json())
-      .then(data => {
-        const dsGH = data
-        let abc = dsGH.gioHang
-        let test = 0
-        if (dsGH != null) {
-        } else {
-          const tmp = {
-            gioHang: []
-          }
-          setGioHangRedis(tmp.gioHang)
-        }
-        if (abc.length != 0) {
-          items.forEach(e => {
-            abc.forEach(f => {
-              if (e.MaHang === f.MaHang) {
-                e.SoLuong = f.SoLuong
-                f.DaDat = e.DaDat
-                f.ConLai = e.ConLai
-                if (f.SoLuong > e.ConLai) {
-                  f.SoLuong = e.ConLai
-                  e.SoLuong = e.ConLai
-                  test = 1
-                }
-              }
-            });
-          });
-          let tongSoLuong = 0
-          abc.forEach(e => {
-            tongSoLuong += e.SoLuong
-          });
-          setSoLuongGioHang(tongSoLuong)
-          tongTienDonHang(abc)
-          setGioHang(abc)
-        }
-        setData2(items)
-        if (test == 1) {
-          alert("Có một số sản phẩm đã hết hàng nên số lượng bị giảm")
-          setGioHangRedis(abc)
         }
       })
   }
@@ -518,6 +382,7 @@ const TrangChu = (props) => {
   }
 
   const [strTogTien, setStrTogTien] = useState()
+  const [soLuongGioHang, setSoLuongGioHang] = useState(0)
 
   const tongTienDonHang = (listGH) => {
     var tTien = 0
@@ -528,10 +393,7 @@ const TrangChu = (props) => {
     setStrTogTien(vND)
   }
 
-  const [soLuongGioHang, setSoLuongGioHang] = useState(0)
-
   const getGioHangRedis4 = async (items, MaNV) => {
-
     await fetch(API_URL + "/gioHang/" + MaNV)
       .then(response => response.json())
       .then(data => {
@@ -579,7 +441,7 @@ const TrangChu = (props) => {
   const [maNV, setmaNV] = useState(null)
 
   const layMaNV = async () => {
-    if (local != null && local != undefined) {
+    if (localStorage.getItem('accesstoken') != null) {
       await fetch(API_URL + '/thongtintaikhoan', {
         method: 'POST',
         headers: {
@@ -587,17 +449,15 @@ const TrangChu = (props) => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          test: local
+          test: localStorage.getItem('accesstoken')
         })
       })
         .then((response) => response.json())
         .then(data => {
           // console.log(`${new Date().getTime()} data=`, data)
           if (data[0] !== undefined) {
-            setTen(data[0].TenNV)
             setmaNV(data[0].MaNV)
             setTimeout(() => {
-              setTen(data[0].TenNV)
               setmaNV(data[0].MaNV)
               getProductsAllSale(data[0].MaNV)
             }, 10);
@@ -633,7 +493,6 @@ const TrangChu = (props) => {
             arr.push(item)
           });
           getGioHangRedis4(arr, MaNV)
-          // props.capNhatGioHang() // thằng này sẽ gọi header update
         }
       })
 
@@ -652,7 +511,6 @@ const TrangChu = (props) => {
           setData3(datas.mang)
         } else {
           getGioHangRedis3(datas.mang, MaNV)
-          // props.capNhatGioHang() // thằng này sẽ gọi header update
         }
       })
 
@@ -671,28 +529,13 @@ const TrangChu = (props) => {
           setData(datas.mang)
         } else {
           getGioHangRedis(datas.mang, MaNV)
-          // props.capNhatGioHang() // thằng này sẽ gọi header update
         }
       })
   }
 
   //Lấy combo ra hiển thị: Namdeptrai
   const [dataCombo, setDataCombo] = useState([])
-  const [local, setLocal] = useState(null)
-
-  // useEffect(() => {
-  // localStorage.setItem('accesstoken', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRCI6IjAzNDUzNDUzNDUiLCJpYXQiOjE2NDE5MDY0NjcsImV4cCI6MTY0MjA3OTI2N30.7IsrZlYVysPlQjJMr58OijkwWlHrCRk955PPJWh8YLI')
-  // setLocal(localStorage.getItem('accesstoken'))
-  // }, [])
-
-  useEffect(() => {
-    // console.log(`${new Date().getTime()} local=`, local)
-    layMaNV()
-  }, [local])
-
-  // cart 
-  // const [soLuongTrongGio, setSoLuongTrongGio] = useState(0)
-  // const [strTogTien, setStrTogTien] = useState()
+  // const [local, setLocal] = useState(null)
 
   const themSPvaoGH2 = (ee1) => {
     let item = {
@@ -782,20 +625,6 @@ const TrangChu = (props) => {
 
   const [lamMoiGH, setLamMoiGH] = useState(0)
   const [lanDau, setLanDau] = useState(true)
-
-  useEffect(() => {
-    // let tongSoLuong = 0
-    // gioHang.forEach(e => {
-    //   tongSoLuong += e.SoLuong
-    // });
-    if (!lanDau) {
-      if (maNV != null && maNV != undefined) {
-        setGioHangRedis(gioHang)
-      }
-    }
-    setLanDau(false)
-    // props.capNhatGioHang()
-  }, [lamMoiGH])
 
   const up4 = (maHang) => {
     if (maNV != null && maNV != undefined) {
@@ -1184,6 +1013,93 @@ const TrangChu = (props) => {
   }, [gioHang])
 
 
+  useEffect(() => {
+    fetch(API_URL + '/xoaMggHetHan', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+
+      })
+    })
+      .then((response) => response.json())
+      .then(data => {
+
+      })
+  }, []);
+
+  useEffect(async () => {
+    if (localStorage.getItem("accesstoken") !== null) {
+      fetch(API_URL + '/verifytoken', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          test: localStorage.getItem("accesstoken")
+        })
+      })
+        .then((response) => response.json())
+        .then(data => {
+          if (data.rs === "token accepted") {
+            // console.log("token con han")
+          } else {
+            // console.log("token het han")
+            localStorage.removeItem("accesstoken")
+            router.push("/")
+          }
+        })
+    } else {
+      // router.push("/")
+    }
+    fetch(API_URL + '/getsuggestfront', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+      })
+
+    })
+      .then((response) => response.json())
+      .then(data => {
+        setInput(data)
+      })
+    ///hàm lấy banner
+    fetch(API_URL + '/layBanner', {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+
+      })
+    })
+      .then((response) => response.json())
+      .then(datas => {
+        setBanner(datas)
+      })
+  }, []);
+
+  // useEffect(() => {
+  //   layMaNV()
+  // }, [local])
+
+  useEffect(() => {
+    if (!lanDau) {
+      if (maNV != null && maNV != undefined) {
+        setGioHangRedis(gioHang)
+      }
+    }
+    setLanDau(false)
+  }, [lamMoiGH])
+
+
   return (
     <div>
       <Head>
@@ -1347,7 +1263,7 @@ const TrangChu = (props) => {
                       </div>
                       <div className="soluong_sp">
                         {
-                          local != null ?
+                          localStorage.getItem("accesstoken") != null ?
                             <div className="MuiCardActions-root1 styles_product_action__1Zos7 MuiCardActions-spacing">
                               <button className="MuiButtonBase-root9 MuiIconButton-root styles_button_root__3mGap styles_button_root_minus__2gTtR styles_minus__ysCNs" tabIndex="0" type="button"
                                 onClick={() => down4(x.IdCombo)}
@@ -1605,7 +1521,7 @@ const TrangChu = (props) => {
                       </div>
                       <div className="soluong_sp">
                         {
-                          local != null ?
+                          localStorage.getItem("accesstoken") != null ?
                             x.ConLai > 0 ?
                               <div className="MuiCardActions-root1 styles_product_action__1Zos7 MuiCardActions-spacing">
                                 <button onClick={() => down3(x.MaHang)} className="MuiButtonBase-root9 MuiIconButton-root styles_button_root__3mGap styles_button_root_minus__2gTtR styles_minus__ysCNs" tabIndex="0" type="button">
@@ -1871,7 +1787,7 @@ const TrangChu = (props) => {
                       </div>
                       <div className="soluong_sp">
                         {
-                          local != null ?
+                          localStorage.getItem("accesstoken") != null ?
                             x.ConLai > 0 ?
                               <div className="MuiCardActions-root1 styles_product_action__1Zos7 MuiCardActions-spacing">
                                 <button onClick={() => down(x.MaHang)} className="MuiButtonBase-root9 MuiIconButton-root styles_button_root__3mGap styles_button_root_minus__2gTtR styles_minus__ysCNs" tabIndex="0" type="button">

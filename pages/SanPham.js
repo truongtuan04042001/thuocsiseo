@@ -679,9 +679,9 @@ const SanPham = (props) => {
     };
     const formatResult = (item) => {
         //return item;
-        console.log(item)
+        // console.log(item)
         let mangItem = item.split("?")
-        console.log(item)
+        // console.log(item)
         return (
             <div className="item_search_parent">
                 <div className="item_search_image">
