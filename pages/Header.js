@@ -49,6 +49,7 @@ const Header = (props) => {
         })
     } else {
       // bla bla
+      setLocal(null)
     }
   }
 
@@ -93,6 +94,7 @@ const Header = (props) => {
 
   const DangNhap = (tenNV) => {
     if (localStorage.getItem("accesstoken") !== null) {
+      setLocal(localStorage.getItem("accesstoken"))
       fetch(API_URL + '/verifytoken', {
         method: 'POST',
         headers: {
@@ -119,6 +121,7 @@ const Header = (props) => {
         setLoginCheck(!login_check)
         setTen(tenNV)
         tenHienThi()
+        setLocal(null)
        // props.callBackApp();
       } else {
         fetch(API_URL + '/verifytoken', {
@@ -137,7 +140,8 @@ const Header = (props) => {
               setLoginCheck(!login_check)
               setTen(tenNV)
               tenHienThi()
-              props.callBackApp();
+              setLocal(null)
+              setLocal(localStorage.getItem("accesstoken"))
             } else {
               console.log("loi roi")
             }
@@ -210,7 +214,7 @@ const Header = (props) => {
   };
 
   const [innerWidth, setInnerWidth] = useState(0)
-  const [local, setLocal] = useState('')
+  const [local, setLocal] = useState(null)
 
   useEffect(() => {
     const abc = window.innerWidth

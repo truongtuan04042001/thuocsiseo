@@ -9,9 +9,6 @@ import Link from "next/link"
 
 const PopupMenu = (props) => {
     const [popup_check, setPopupCheck] = useState(false);
-    const callbackFunction = (childData) => {
-        setPopupCheck(childData)
-    };
     useEffect(() => {
 
     });
@@ -22,14 +19,12 @@ const PopupMenu = (props) => {
     const ClickOpen = () => {
         setOpenDialog(true)
     }
-    const ClickClose = () => {
-        setOpenDialog(false)
-    }
     const No = () => {
         setOpenDialog(false);
     }
     const Yes = () => {
         setOpenDialog(false);
+        setPopupCheck(false)
         const tmp = `NOTLOGIN`
         dangxuat(tmp);
         localStorage.removeItem("accesstoken");
@@ -95,7 +90,7 @@ const PopupMenu = (props) => {
                                     </button>
                                     <Dialog
                                         open={openDialog}
-                                        onClose={ClickClose}
+                                        onClose={No}
                                         onKeyPress={(e) => testKey(e)}
                                     >
                                         <DialogTitle>

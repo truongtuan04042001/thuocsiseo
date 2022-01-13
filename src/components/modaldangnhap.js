@@ -77,9 +77,6 @@ const ModalDangNhap = (props) => {
     }, []);
 
     const dangNhap = async () => {
-        // setIsOpen(false);
-        // sendDataToHeader();
-        // localStorage.setItem("user-inf", ten_nv);
         if (ten_nv == undefined || ten_nv == "" || ten_nv == null) {
             alert("Tên trống")
         } else {
@@ -104,46 +101,23 @@ const ModalDangNhap = (props) => {
                             sendDataToHeader(data);
                             localStorage.setItem("accesstoken", data);
                             notify();
-                            // notifyVoucher();
                             
                         } else {
                             alert("Sai tên đăng nhập hoặc mật khẩu, vui lòng kiểm tra lại.")
                         }
 
                     })
-                //if (nhanVien[0].ChucVu !== -1) {
-                //    setIsOpen(false);
-                //    if (nhanVien[0].Info == 0) {
-                //        toggleModalThongTinNV()
-                //        // console.log(new Date().getTime() + " thongTinNhanVien= " + JSON.stringify(nhanVien))
-                //    } else {
-
-                //        // localStorage.setItem("inf-thuocsi", ten_nv);
-                //        // if(check_dieukhoan){
-                //        //localStorage.setItem("user-inf", ten_nv);
-                //       // localStorage.setItem("chucVu", nhanVien[0].ChucVu);
-                //        // }
-                //    }
-                //} else {
-                //    alert("Sai tên đăng nhập hoặc mật khẩu, vui lòng kiểm tra lại.")
-                //}
             }
         }
     }
-    // const handleKeyPress = (event) => {
-    //     if (event.key === 'Enter') {
-    //         dangNhap()
-    //         console.log('enter press here! ')
-    //     }
-    // }
-    // end login
-    //  code lụi mà nó hiểu, vl thật =)) này thì enter thì tự động chọn có hả, chuyện này OK =)))
+
     const testKey = (e) => {
         if (e.code === "Enter") {
             // alert("OK ENTER")
             dangNhap()
         }
     }
+
     const thongTinNhanVien = async () => {
         // console.log(new Date().getTime() + " thongTinNhanVien= " + JSON.stringify(nhanVien))
         let vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
@@ -247,7 +221,6 @@ const ModalDangNhap = (props) => {
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', textAlign: 'center' }}>
                         <h3 style={{ margin: 'auto' }}>Đăng Nhập</h3>
-
                     </div>
 
                     <div style={{ display: 'flex', flexDirection: 'column', height: 270 }}>
