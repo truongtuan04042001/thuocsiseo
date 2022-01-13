@@ -1,5 +1,6 @@
 import fast_cart from '../public/images/fast-cart.png';
 import menu_tag from '../public/images/tag-menu.png';
+import get_a_discount from '../public/images/tag-menu.png';
 import sale from '../public/images/sale.png';
 import up from '../public/images/up.png';
 import messenger_icon from '../public/images/messenger-icon.png';
@@ -348,6 +349,16 @@ const Header = (props) => {
           </Link>
           <Link className="menu-a" onClick={() => { verifytoken() }}
             href={{
+              pathname: '/MaGiamGia',
+              // query: { name: 'test' },
+            }}>
+            <a>
+              <Image src={get_a_discount}></Image>
+              <div id="san_pham">Mã giảm giá / Quà tặng</div>
+            </a>
+          </Link>
+          <Link className="menu-a" onClick={() => { verifytoken() }}
+            href={{
               pathname: '/KhuyenMai',
               // query: { name: 'test' },
             }}>
@@ -356,43 +367,7 @@ const Header = (props) => {
               <div id="san_pham">Khuyến Mãi</div>
             </a>
           </Link>
-          {/* 
-          <Link to='/SanPham' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={menu_tag}></img>
-            <div id="san_pham">Sản Phẩm</div>
-          </Link> */}
-          {/* <Link to='/' className="menu-a" style={{ textDecoration: 'none' }}>
-              <img width='20' height='20' src={menu_hoatchat}></img>
-              <div id="san_pham">Hoạt Chất</div>
-            </Link> */}
-          {/* <Link to='/' className="menu-a" style={{ textDecoration: 'none' }}>
-            <img width='20' height='20' src={menu_chinhsach}></img>
-            <div id="san_pham">Chính Sách</div>
-          </Link> */}
-          {/* <Link to='/DatHangNhanh' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={fast_cart}></img>
-            <div id="san_pham">Đặt hàng nhanh</div>
-          </Link>
-          <Link to='/MaGiamGia' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={get_a_discount}></img>
-            <div id="san_pham">Mã giảm giá / Quà tặng</div>
-          </Link>
-          <Link to='/KhuyenMai' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={sale}></img>
-            <div id="san_pham">Khuyến mãi</div>
-          </Link> */}
-          {/* <Link to='/Aboutus' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={Aboutus}></img>
-            <div id="san_pham">Chính sách </div>
-          </Link>
-          <Link to='/Introduce' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={Recommend}></img>
-            <div id="san_pham">Giới thiệu</div>
-          </Link>
-          <Link to='/Article' className="menu-a" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-            <img className='menu-a-img' src={Article}></img>
-            <div id="san_pham">Chia sẻ kiến thức</div>
-          </Link> */}
+         
         </div>
 
         {
@@ -411,12 +386,7 @@ const Header = (props) => {
                     }
                   </div>
                 </Link>
-                {/* <Link to='/GioHang' className="menu-b1" style={{ textDecoration: 'none' }} onClick={() => { verifytoken() }}>
-                  <img width='20' src={shopping_bag}></img>
-                  {
-                    soLuongGioHang != 0 ? <span className="MuiBadge-badge MuiBadge-anchorOriginTopRightRectangle MuiBadge-colorSecondary">{soLuongGioHang}</span> : null
-                  }
-                </Link> */}
+            
               </div>
               <PopupMenu
                 pass={"123"}

@@ -1171,9 +1171,6 @@ const TrangChu = (props) => {
     setInnerWidth(abc)
   }, [])
 
-  const [soLuongGioHang, setSoLuongGioHang] = useState(0)
-  const [strTogTien, setStrTogTien] = useState()
-
   useEffect(() => {
     let tongSoLuong = 0
     let tTien = 0
