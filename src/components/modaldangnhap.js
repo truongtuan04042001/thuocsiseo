@@ -7,7 +7,7 @@ import dky_pass from '../../public/images/dky-pass.png';
 import dky_location from '../../public/images/dky-location.png';
 import show_pass from '../../public/images/show-pass.png';
 import { API_URL } from '../constants/constants'
-// import QuenMK from './QuenMatKhau';
+import QuenMK from './/QuenMatKhau'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Modal from 'react-modal';
@@ -246,7 +246,7 @@ const ModalDangNhap = (props) => {
                             <label htmlFor="checkbox_dieukhoan" id="title_ghinho_dnhap">Ghi nhớ đăng nhập</label>
                         </div> */}
                         {/* <ModalKhachHang/> */}
-                        {/* <QuenMK></QuenMK> */}
+                        <QuenMK></QuenMK>
                         <button id="btn_dky" onClick={dangNhap}><b>Đăng nhập</b></button>
 
                         <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>

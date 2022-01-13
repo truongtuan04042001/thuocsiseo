@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
-import '../css/Header.css';
+
 import Modal from 'react-modal';
 import { API_URL } from '../constants/constants'
 import firebase from './firebase';
+
+
+
 
 const customStyles = {
     content: {
@@ -20,14 +23,18 @@ const customStyles = {
     },
 
 };
-Modal.setAppElement('#root')
 const QuenMK = () => {
     const [modalIsOpen, setIsOpen] = useState(false);
     const [modalDoiMk, setModalMK] = useState(false);
     const [sdt, setSdt] = useState();
     const [mk, setMk] = useState();
     const [hiencaptcha, setCaptCha] = useState(false);
-
+    useEffect(() => {
+        Modal.setAppElement('body')
+        // if (!firebase.apps.length) {
+        //     firebase.initializeApp(firebaseConfig);
+        //   }
+    }, [])
     useEffect(() => {
         let vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
         if (vnf_regex.test(sdt)) {
@@ -59,6 +66,7 @@ const QuenMK = () => {
     }, [sdt]);
     useEffect(() => {
         if (hiencaptcha) {
+            console.log(hiencaptcha)
             CaptchaCall();
         }
     }, [hiencaptcha])

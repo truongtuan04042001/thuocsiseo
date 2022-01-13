@@ -70,6 +70,9 @@ const SanPham = (props) => {
             left: 0,
         })
         setSessionstorage(sessionStorage.getItem("Searchfromtc"))
+        setTimeout(() => {
+            setSessionstorage(sessionStorage.getItem("Searchfromtc"))
+        }, 10);
     }, []);
 
     const LayGiaTriPagination = (childData) => {
