@@ -20,6 +20,9 @@ import React from 'react'
 import Image from 'next/image'
 
 
+
+
+
 const Header = (props) => {
   const router = useRouter()
   const [ten, setTen] = useState();
