@@ -235,6 +235,7 @@ const Header = (props) => {
 
   return (
     <div className="header">
+      <div className='bocwidth'></div>
       <div className="mes_zalo">
         <div>
           <button className="up_btn"
@@ -268,6 +269,7 @@ const Header = (props) => {
           </a>
         </div>
       </div>
+     
       <div className="header_child"
       >
         {/* {
